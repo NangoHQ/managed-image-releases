@@ -1,5 +1,50 @@
 # Managed image releases
 
+## Managed 1.5.6 (0.70.5)
+
+## Managed Nango 1.5.6 (application 0.70.5)
+
+- **Released:** 2026-06-01
+- **Docker image:** `nangohq/nango:managed-1.5.6-0.70.5-9a9883712fd634fa4b4b5b5d24d8c2ab5c7ef579`
+- **Pin CLI to:** `0.70.5`
+- **Compare:** https://github.com/NangoHQ/nango/compare/a447dd8c75b2412d88862ceb02c298c3228b635b...9a9883712fd634fa4b4b5b5d24d8c2ab5c7ef579
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(integrations)* Allow mercury to also connect to sandbox environments (#6270)
+- *(integrations)* Add support for theirstack (#6269)
+- *(webapp)* Restructure component directories by taxonomy (#6274)
+- *(integrations)* Add support for altrata (#6266)
+- *(integrations)* Add support for pverify (#6265)
+- *(integrations)* Add support for toast (#6237)
+- *(ci)* Deploy design system Storybook to storybook.nango.dev (#6284)
+- *(records)* Add records router (#6285)
+- *(storybook)* Catalog v1 and v2 components (#6292)
+- *(sync_jobs)* Prep sync_job_id for int4 → bigint widening (NAN-5491 Phase 0) (#6260)
+- Add Cursor Cloud specific instructions to AGENTS.md (#6245)
+- *(records)* Stop populating records.sync_job_id (NAN-5491 Phase 1) (#6262)
+- *(runner)* Send runner telemetry to persist (#6209)
+
+### Changed
+
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/545e9efc7e737663aea76f6868c3c34084ab7e94 by Victor Lang'at
+- Improve AI related docs (#6220)
+- *(scheduler)* Decouple from orchestrator (#6276)
+
+### Fixed
+
+- *(scheduler)* Test(scheduler): close integration coverage gaps (#6275)
+- *(bigchange)* Remove token_request_auth_method — endpoint rejects Basic, requires body (#6267)
+- *(proxy)* Restore header forwarding through redirects when byte-metering transport is active (#6282)
+- *(webapp)* Resolve CASA DAST findings (#6294)
+- *(vulns)* Fix vulnerabilities (#6302)
+
 ## Managed 1.5.5 (0.70.5)
 
 ## Managed Nango 1.5.5 (application 0.70.5)
