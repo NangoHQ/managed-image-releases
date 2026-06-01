@@ -28,8 +28,8 @@ This can be wired into Slack, Microsoft Teams, RSS readers, or internal automati
 ## Latest release
 
 - **Latest GitHub Release:** https://github.com/NangoHQ/managed-image-releases/releases/latest
-- **Latest version manifest:** https://github.com/NangoHQ/managed-image-releases/blob/master/managed-manifest.json
-- **Release history in repo:** https://github.com/NangoHQ/managed-image-releases/blob/master/CHANGELOG.md
+- **Latest version manifest:** https://github.com/NangoHQ/managed-image-releases/blob/main/managed-manifest.json
+- **Release history in repo:** https://github.com/NangoHQ/managed-image-releases/blob/main/CHANGELOG.md
 
 `managed-manifest.json` is updated automatically on each release and mirrors the managed release state from the main Nango repository.
 
