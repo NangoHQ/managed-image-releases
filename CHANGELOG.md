@@ -1,5 +1,59 @@
 # Managed image releases
 
+## Managed 1.5.7 (0.70.6)
+
+## Managed Nango 1.5.7 (application 0.70.6)
+
+- **Released:** 2026-06-02
+- **Docker image:** `nangohq/nango:managed-1.5.7-0.70.6-fe4a94f3ed76e2386edb41c6b7d8d5de467daf94`
+- **Pin CLI to:** `0.70.6`
+- **Compare:** https://github.com/NangoHQ/nango/compare/9a9883712fd634fa4b4b5b5d24d8c2ab5c7ef579...fe4a94f3ed76e2386edb41c6b7d8d5de467daf94
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(webapp)* Migrate v1 components to v2 callsites (#6295)
+- *(usage)* CH-backed /plans/billing-usage (dev-gated, foundations for shadowing) (#6286)
+- *(logs)* Add OpenSearch backend selectable via NANGO_LOGS_PROVIDER (#5873)
+
+### Changed
+
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/1c09156b2b26d30d0d31ce23539eeb9031e82f3f by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/cfa631a0e262d973fce64e0503c5f903a3825682 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/c2133954cc54ad67499cdb545834b5b522793cc1 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/3a8d398c33213da93e57325747c8ba3cde81024c by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/450bee7fe4ee9376189b879ad3dfdfcefb558aed by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/2583beddda94ad6649fc453fbfe1118c27b76457 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/b51ecb75d2cdc54158080b9427678d6bcf9222eb by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/40b3b22fc790ab63efae50ceb6526e4675af3635 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/fbf962861f88773422b1ef1694c11eb663b30eec by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/f7d1ebfac4dffa564418a8d9bd22d0968e86137b by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/3f46f7b322d593884f478c6bba25c5416776cbca by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/a4e2b4075b68a751a927ac5233ee5440e08df1ad by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/e62766772c12c994678723bf6853931bd1609ab8 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/7bc150ab26710bee1e85ad065e9bbf7f8b6a6907 by Victor Lang'at
+- Changelog for agent-led onboarding, JIT APIs (#6313)
+
+### Fixed
+
+- Vitest upgrade (#6315)
+
+## [v0.70.6] - 2026-06-01
+
+### Added
+
+- Add non-technical links to llms.txt (#6310)
+- *(webapp)* Allow local dashboard dev server to connect to remote API (#6303)
+
+### Fixed
+
+- *(webapp)* Update enterprise contact link to /demo (#6308)
+
 ## Managed 1.5.6 (0.70.5)
 
 ## Managed Nango 1.5.6 (application 0.70.5)
