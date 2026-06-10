@@ -1,5 +1,105 @@
 # Managed image releases
 
+## Managed 1.5.8 (0.70.6)
+
+## Managed Nango 1.5.8 (application 0.70.6)
+
+- **Released:** 2026-06-10
+- **Docker image:** `nangohq/nango:managed-1.5.8-0.70.6-50423dd0f8986fd173d33418340b8d9bd4d2c1f4`
+- **Pin CLI to:** `0.70.6`
+- **Compare:** https://github.com/NangoHQ/nango/compare/fe4a94f3ed76e2386edb41c6b7d8d5de467daf94...50423dd0f8986fd173d33418340b8d9bd4d2c1f4
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(usage)* Shadow ClickHouse against Orb for /plans/billing-usage (#6324)
+- *(ci)* Add composite setup-node action with npm cache (#6177)
+- *(connect-ui)* Add a dropdown to connect ui (#6180)
+- *(usage)* Top-N seen-values endpoint for billing-usage filters (#6326)
+- *(integrations)* Add N-able N-central support (#6333)
+- *(providers)* Add a token-response-headers for TWO_STEP (#6334)
+- *(usage)* Filter[<metric>]=<dim>:<value> on /plans/billing-usage (#6337)
+- *(records)* Add multi-store routing to RecordsRouter (#6314)
+- *(runner)* Meter uncontrolled fetch transfers (#6215)
+- *(records_seen)* Add generation bigint column (NAN-5491 Phase 2a) (#6344)
+- *(records_seen)* Dual-write generation + create per-partition generation index (NAN-5491 Phase 2b) (#6345)
+- *(integrations)* Add support for dualentry mcp (#6339)
+- *(webapp)* Add vite proxy for multi-worktree dev (#6261)
+- *(webapp)* Migrate v1 Command to plain HTML, delete source (#6336)
+- Add v2 SecretTextArea and migrate callsite (#6341)
+- *(design-system)* Port PeriodSelector to v2 primitives (#6360)
+- *(usage)* Resolve environment_id to env name on top-dimension-values (#6389)
+- *(webapp)* Migrate v1 MultiSelect to v2 in Logs (#6361)
+- *(integrations)* Add support for chatarmin (#6374)
+- *(runner)* Track persist-bound records/logs calls (#6291)
+- *(integrations)* Add Private API Key (Generic) integration support (#6386)
+- *(server)* Track API egress bytes (#6331)
+- *(integrations)* Add support for walmart (#6392)
+- *(oauth)* Enrich missing-state-cookie metric to debug impacted users (#6395)
+- *(records_seen)* Backfill generation from sync_job_id (NAN-5491 Phase 2c) (#6346)
+- *(records_seen)* Switch deleteOutdatedRecords reads to generation (NAN-5491 Phase 2d) (#6347)
+- *(integrations)* Add support for swoogo (#6257)
+- *(sync_jobs)* Shrink retention + add id_big shadow column (NAN-5491 Phase 3a) (#6376)
+- *(records)* Route to secondary store based on plan (#6363)
+- *(scheduler)* Add at() for one-shot deferred tasks (#6309)
+- *(usage)* Server-side rollout flags for routing billing-usage to ClickHouse (#6405)
+- Make function deployments async (#6404)
+- *(webapp)* Show dev tools panel for Nango admins in production (#6418)
+- Add AWS SigV4 proxy integration (#5041)
+
+### Changed
+
+- Serialize deploys per service and stage (#6320)
+- Update version in manifest
+- *(server)* Upload js and ts file to S3 in parallel during function deploy (#6329)
+- Self-hosted docs update (#6328)
+- Automate Slack deploy notifications to #deploys (#6316)
+- Report e2b running sandboxes (#6317)
+- *(webapp)* Migrate v1 components with API-different v2 counterparts (#6322)
+- *(test)* Mock httpCall to fix flaky request tests (#6351)
+- *(test)* Mock fetch in loggedFetch unit tests to eliminate flakiness (#6311)
+- *(webapp)* Replace v1 Info pattern with v2 Alert (#6362)
+- *(server)* Skip unchanged function upload during deployment (#6330)
+- *(webapp)* Move GoogleButton to components-v2/patterns (#6342)
+- *(webapp)* Migrate v1 TagsInput to v2 ScopesInput (#6338)
+- *(webapp)* Migrate v1 Drawer (vaul) to v2 Sheet (#6340)
+- *(webapp)* Replace v1 SimpleTooltip with v2 ConditionalTooltip (#6357)
+- Remove experimental /remote-function endpoints (#6390)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/019b38242ea5aeb460ffd521803de3a5be5a07fb by Victor Lang'at
+- *(webapp)* Delete unused v1 source files and Storybook stories (NAN-5846) (#6373)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/f4c2756a54def06da0125208df33802d51faafce by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/de84a228849ae165e23d735553e6ef04231badcd by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/b06c1368cb3f2e23d482f0e0f1edcb1e5e089115 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/7e09dda896536c3f8e9d33d5e8dba30f672974d5 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/0c60f7541c1e553d2effa2205b797da72587983b by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/5aae537fef342a311c8ebc648df91d18443efcaa by Victor Lang'at
+- *(webapp)* Remove redundant UI library dependencies (#6399)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/e88a651c9ff39dc50602e8cfd6042c106c4560da by Victor Lang'at
+- *(scheduler)* Move backpressure monitoring to orchestrator (#6297)
+- *(records)* Decrypt records with bounded concurrency in getRecords (#6407)
+
+### Fixed
+
+- *(webhook)* Bypass integration level webhook signing for Folk (#6343)
+- *(tests)* Set hookTimeout to match testTimeout in integration config (#6366)
+- *(server)* Preserve `token_response_metadata` fields when processing connection config overrides (#6359)
+- *(server)* Fix token refresh for slack (#6293)
+- *(providers)* Deprecate okta-cc subdomain in favor of hostname (#6385)
+- Add missing index on api_secrets (hashed) (#6387)
+- *(deploy)* Always upload files for new functions regardless of checkIfChanged result (#6398)
+- End user deletion timeouts (#6409)
+- *(runner)* Retry httpFetch on UND_ERR_SOCKET and HTTP 5xx/429 (#6410)
+- *(invite)* Send login link to existing users instead of signup link (#6406)
+- *(usage)* Resolve environment_id to env name in /plans/billing-usage breakdown (#6413)
+- *(runner)* UND_ERR_SOCKET retries skipped (#6424)
+- *(server)* Function deploy skips for changed dependencies (#6411)
+- *(providers)* Fix followupboss token request (#6403)
+- *(vulns)* Removed webflow-api and npm audit fix (#6430)
+
 ## Managed 1.5.7 (0.70.6)
 
 ## Managed Nango 1.5.7 (application 0.70.6)
