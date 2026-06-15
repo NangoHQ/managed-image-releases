@@ -1,5 +1,90 @@
 # Managed image releases
 
+## Managed 1.5.9 (0.70.6)
+
+## Managed Nango 1.5.9 (application 0.70.6)
+
+- **Released:** 2026-06-15
+- **Docker image:** `nangohq/nango:managed-1.5.9-0.70.6-e81f6c2beee75409b5c78c0f4e55bfc4d643042d`
+- **Pin CLI to:** `0.70.6`
+- **Compare:** https://github.com/NangoHQ/nango/compare/50423dd0f8986fd173d33418340b8d9bd4d2c1f4...e81f6c2beee75409b5c78c0f4e55bfc4d643042d
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(records_seen)* Drop NOT NULL on sync_job_id (NAN-5491 Phase 2e) (#6348)
+- *(records_seen)* Stop writing sync_job_id (NAN-5491 Phase 2f) (#6349)
+- *(records_seen)* Drop sync_job_id column (NAN-5491 Phase 2g) (#6350)
+- *(integrations)* Add support for thomson-reuters-legal-tracker (#6431)
+- Add generic task queue package wired into the server (#6312)
+- *(webapp)* Break down billing usage by dimension (EXT-1144) (#6384)
+- *(webapp)* Enable dev tools panel on staging (#6454)
+- *(integrations)* Add support for a-leads (#6414)
+- *(integrations)* Add support for leadfeeder (#6417)
+- *(integrations)* Add support for adyntel (#6415)
+- *(integrations)* Add support for diffbot (#6421)
+- *(integrations)* Add support for discolike (#6422)
+- *(integrations)* Add support for mattermost (#6432)
+- *(integrations)* Add support for robinhood-mcp (#6439)
+- *(usage)* Clickhouse capping read primitive (#6460)
+- *(webapp)* Hide usage card for paid accounts (#6469)
+- *(integrations)* Add support for cloudflare-mcp (#6437)
+- *(webapp)* Adopt DS semantic tokens, theme-awareness and visual fixes (#6468)
+- *(integrations)* Add support for tempo (#6435)
+- *(webapp)* Add light mode (#6445)
+- *(integration)* Add support for raindrop-mcp (#6438)
+- Add @nangohq/kms package (#6471)
+- *(feature-flags)* Add unleash openfeature client (#5910)
+- *(usage)* Dual-write Orb + ClickHouse on the capping path with divergence telemetry (#6482)
+- *(kvstore)* Support rotating IAM tokens for Redis via node-redis v… (#6441)
+
+### Changed
+
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/5d9b20de4879e0764639f67930439338ebdd0bb6 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/aadc62f465512f17413d339d6617692516d702a8 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/a142bcbec0ed54c892004907fc6eabd1df388ccc by Victor Lang'at
+- Raise eslint heap limit to 8GB (#6480)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/8219bca5fcdc7e55c696f0d2e2fa90a517b87272 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/347c40f847ea423c0b5ad77732fc4f4115c02302 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/fc5990660e19c0cda938fa2772ddc5dfb98a6070 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/3a06586d9c98f065cef26580a3742a370e58e602 by Marcin Dobrowolski
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/12b5c61cf97d453dd818d0c9438faf1cf8bd1009 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/4e43bce8ffeb974d534397804ff075f384b9cc9d by Marcin Dobrowolski
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/39e98e9805f344b16382dbb0310c50bfd31313c3 by Victor Lang'at
+- *(sandbox)* Refactor the sandbox code to abstract away the provider better (#6440)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/921a3f0e15bebe3ca7a711de214d42d8b12a40d6 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/e13d876d33241316aa6673214fc868d7c232862f by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/ced999a9aee150f80bce36ebb3a39bf0f94fbf3c by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/d7e9f43d1939a8d9a0d8416c322881de0a9b9811 by Victor Lang'at
+- Changelog for light mode (#6505)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/f7887dff786f62644a5ce6266a7d45fd8e17bf59 by Victor Lang'at
+
+### Fixed
+
+- *(sandbox)* Disable e2b background command timeout (#6436)
+- *(vulns)* Update vitest version in tasks (#6453)
+- *(server)* Bind Slack admin connection id to the caller (#6434)
+- *(server)* Gate Slack alert admin routes with RBAC (#6433)
+- *(webapp)* Prevent horizontal scroll and fix scrollbar color in logs (#6443)
+- *(webapp)* De-conflict breakdown chart colors (#6459)
+- Fix webhook docs (#6470)
+- *(webapp)* Preserve theme and flags on logout (#6456)
+- *(scheduler)* Run cancel task transition inside the transaction (#6428)
+- *(providers)* Update the authorization url for twitter-v2 (#6479)
+- *(orchestrator/jobs)* Surface real error on processor task span (#6474)
+- *(sync_jobs)* Restore CRON_DELETE_OLD_JOBS_MAX_DAYS default to 31 (NAN-5491) (#6496)
+- *(server)* Increase min password length to 12 (#6464)
+- *(vulns)* Fix critical (#6498)
+- *(proxy)* Harden proxy base url override config (#6458)
+- *(kms)* Resolve DEK from wrapped key by default  (#6487)
+- *(records)* Split records_seen entries to limit size of ids array (#6485)
+- *(auth)* Invalidate other sessions on password change and reset (#6490)
+
 ## Managed 1.5.8 (0.70.6)
 
 ## Managed Nango 1.5.8 (application 0.70.6)
