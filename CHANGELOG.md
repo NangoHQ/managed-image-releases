@@ -1,5 +1,98 @@
 # Managed image releases
 
+## Managed 1.5.10 (0.70.7)
+
+## Managed Nango 1.5.10 (application 0.70.7)
+
+- **Released:** 2026-06-19
+- **Docker image:** `nangohq/nango:managed-1.5.10-0.70.7-2c0c2b7d0287b0dce3728b8ff07aa83f124e4b8d`
+- **Pin CLI to:** `0.70.7`
+- **Compare:** https://github.com/NangoHQ/nango/compare/e81f6c2beee75409b5c78c0f4e55bfc4d643042d...2c0c2b7d0287b0dce3728b8ff07aa83f124e4b8d
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(telemetry)* Wire data transfer through pubsub (#6530)
+- *(integrations)* Add support for shopvox (#6532)
+- *(usage)* Flip capping source from Orb to ClickHouse via percentage rollout (#6509)
+- *(support)* In app chat support (#6455)
+- *(webapp)* Redesign app shell (#6543)
+- *(metering)* Add usage-events subscribe env var (#6572)
+- *(webapp)* Records list page (#5862)
+- *(webhooks)* Add createFunction/createWebhook authoring primitive (NAN-5885) 1/n (#6447)
+- Prevent overriding design-system component styles (#6504)
+- *(observability)* Instrument usage-tracker call decisions and metering consumer (#6580)
+- *(sandbox)* Add AgentCore deployment step in GH Actions (#6534)
+
+### Changed
+
+- Remove metrics section from self-hosted (#6550)
+- *(runner)* Increase telemetry batching thresholds (#6551)
+- *(runner)* Further increase telemetry batching thresholds (#6554)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/947ce1196c9a663e7c7cf33bc3c663c0d80fe4f5 by Victor Lang'at
+- *(webapp)* Migrate to design-system Button (#6503)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/044202db3f9d7b3a65bfa6799c00b154446a45a1 by Marcin Dobrowolski
+- *(tests)* Shard integration tests across 4 runners (#6568)
+- *(server)* Move deletion logic out of cron folder (#6560)
+- Reintroduce DT telemetry wiring over pubsub (#6557)
+
+### Fixed
+
+- Revert wire data transfer through pubsub (#6535)
+- *(metering)* Fix incr errors due to float (#6523)
+- Vulns and upgrades (#6529)
+- *(providers)* Fix sap-success-factors company id pattern (#6553)
+- *(read-ai)* Use correct OAuth2 authorization endpoint (#6541)
+- *(sync)* Respect auto_start when reauthenticating a connection (#6544)
+- *(logger)* Fix the logger formatting (#6522)
+- Disclosure of account existence in password reset (#6559)
+- *(providers)* Fix attio-mcp scope separator (#6570)
+- *(providers)* Fix verification endpoint for reply.io (#6512)
+- *(webapp)* Replace virtualized records table with plain table (#6579)
+- *(vulns)* Resolve 2 highs (#6581)
+
+## [v0.70.7] - 2026-06-16
+
+### Added
+
+- *(functions)* Add delete endpoint with async teardown pipeline (#6358)
+- *(integrations)* Add support for youcanbook-me (#6511)
+- *(webhook)* Add url deny list to webhook (#6507)
+- *(integrations)* Add support for agiloft (#6506)
+- *(integrations)* Add support for attio-mcp (#6510)
+- *(webapp)* Add "Delete function" button (#6457)
+- *(server)* Public endpoints for function management (#6472)
+- Add Read.ai OAuth2 provider (#6476)
+- *(utils)* Hoist webhook utils (#6450)
+- *(pubsub)* Add publishBatch to transports (#6451)
+- *(telemetry)* Wire data transfer through pubsub (#6452)
+- Wrapped and plaintext key are mutually exclusive (#6488)
+- *(design-system)* Component foundations (#6246)
+- *(webapp)* Reset playground on logout (#6461)
+- *(sandbox)* Add AgentCore sandbox provider (#6502)
+- *(server)* Mark connections as refresh failed if validate-connection fails on reconnect (#6467)
+
+### Changed
+
+- Update version in manifest
+- "fix(redis): harden redis usage to tolerate connection issues" (#6514)
+- Remove kvstore FeatureFlags (#6513)
+- *(webapp)* Multi-worktree dev via dev CORS (alt to #6473) (#6477)
+- *(metering)* Remove kms dependency (#6520)
+- Revert pubsub wiring for data transfer (#6525)
+- "revert: "fix(redis): harden redis usage to tolerate connection issues"" (#6521)
+
+### Fixed
+
+- *(redis)* Harden redis usage to tolerate connection issues (#6423)
+- *(node-client)* Accept webhookSigningKey, add apiKey (NAN-5980) (#6493)
+- *(server)* Proxy splat url does not match query only routes (#6508)
+- *(ci)* Isolate npm publish setup for trusted publishing (#6531)
+
 ## Managed 1.5.9 (0.70.6)
 
 ## Managed Nango 1.5.9 (application 0.70.6)
