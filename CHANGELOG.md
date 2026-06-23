@@ -1,5 +1,59 @@
 # Managed image releases
 
+## Managed 1.5.11 (0.70.8)
+
+## Managed Nango 1.5.11 (application 0.70.8)
+
+- **Released:** 2026-06-23
+- **Docker image:** `nangohq/nango:managed-1.5.11-0.70.8-aae30d044d7e229807d51a3957c212f3fb689e1a`
+- **Pin CLI to:** `0.70.8`
+- **Compare:** https://github.com/NangoHQ/nango/compare/2c0c2b7d0287b0dce3728b8ff07aa83f124e4b8d...aae30d044d7e229807d51a3957c212f3fb689e1a
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(observability)* Add nango.usage.revalidate.work span for lock-acquired path (#6586)
+- *(metering)* Persist data_transfer events to CH (#6483)
+- *(integrations)* Add a skip_encode config to attio-mcp (#6577)
+- *(feature-flags)* Implement OAuth state cookie enforcement flag (#6533)
+- Separate function catalog (#6465)
+- *(integrations)* Add support for boondmanager (#6594)
+- *(sync_jobs)* Backfill id_big from id (NAN-5491 Phase 3b) (#6377)
+- *(integrations)* Add support for netsuite-client-credentials (#6583)
+- *(sync_jobs)* Build unique index on id_big (NAN-5491 Phase 3c) (#6378)
+- *(integrations)* Add support for workday-cc (#6588)
+- *(sync_jobs)* Validate id_big NOT NULL (NAN-5491 Phase 3d) (#6379)
+- *(sync_jobs)* Atomic PK swap from int4 id to bigint (NAN-5491 Phase 3e) (#6380)
+- *(sync_jobs)* Drop legacy id_old and lift sequence to bigint (NAN-5491 Phase 3f) (#6381)
+
+### Changed
+
+- Update version in manifest
+- *(lint)* Move import sorting to Prettier (#6582)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/9b90d563da83c22abcd518d1f6f795e865995457 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/a25e1767d723dd55aa190e80a94e6a43523c8237 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/6e7f1bfa5ac51e442b459131ef28af99424204f4 by Victor Lang'at
+- Make tsconfigs compatible with typescript-go (#6593)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/13b04626a556f4a2484e90b416b7c2f836bc5e23 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/5746cac87f06e2c80843c02258a0e75b1b0d4926 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/c33f8fe2f97083392dbdd599671e3ce8997ca7b2 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/60c8a54ffc81b42ae2d066cdfdbd7cbbf10d3b0b by Victor Lang'at
+- *(lint)* Replace ESLint with oxlint (#6604)
+- Update egress-metering middleware (#6591)
+
+### Fixed
+
+- *(in-app)* Fix the in-app chat support button location (#6590)
+- *(webapp)* Stop logs table bouncing on auto-refresh (#6592)
+- *(server)* Enforce RBAC on flow read routes (#6603)
+- *(vulns)* Fix high vulnerabilities (#6608)
+
+## [v0.70.8] - 2026-06-19
+
 ## Managed 1.5.10 (0.70.7)
 
 ## Managed Nango 1.5.10 (application 0.70.7)
