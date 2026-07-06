@@ -1,5 +1,121 @@
 # Managed image releases
 
+## Managed 1.5.12 (0.70.9)
+
+## Managed Nango 1.5.12 (application 0.70.9)
+
+- **Released:** 2026-07-06
+- **Docker image:** `nangohq/nango:managed-1.5.12-0.70.9-27ea2b528e7df47b99d9250c6880753c81cd1e7d`
+- **Pin CLI to:** `0.70.9`
+- **Compare:** https://github.com/NangoHQ/nango/compare/aae30d044d7e229807d51a3957c212f3fb689e1a...27ea2b528e7df47b99d9250c6880753c81cd1e7d
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(integrations)* Add support for ahrefs (#6610)
+- *(in-app)* Change in app launcher icon (#6607)
+- *(integrations)* Add support for microsoft-oauth2-cc-cert (#6609)
+- *(integrations)* Add support for surecontact (#6623)
+- *(integrations)* Add suppport for jamie (#6620)
+- *(integrations)* Add support for dialpad-wfm (#6619)
+- *(integrations)* Add support for acumatica (#6617)
+- *(integrations)* Add support for sage-intacct-cc (#6616)
+- Add SAP Ariba Integration (#5749)
+- *(connect-ui)* Add a11y regression test suite (#6584)
+- *(egress)* Introduce egress package (#6615)
+- Add new Orb plans (#6635)
+- Drill into usage breakdowns by filtering to a single value (NAN-5874) (#6528)
+- Add changelog entry for usage breakdowns (#6658)
+- *(server)* Meter GET /records egress bytes (#6648)
+- *(docs)* Enhance integration configuration details for private API (#6656)
+- Add custom timeouts per service (#6667)
+- *(design-system)* Align input and button sizing on one scale (#6645)
+- *(design-system)* Add Field and Label, migrate webapp form fields (#6657)
+- *(design-system)* Add interactive border token (#6655)
+- Add CreateFunction definition (#6664)
+- *(server/webapp)* Show function code (#6679)
+- Connection-level webhook url override (#6639)
+- *(providers)* Regenerate assertion for two_step only when the assertion expires (#6680)
+- *(providers)* Add subdomain connection config for youcanbook-me (#6684)
+- Add June 2026 changelog entries (#6685)
+- *(ratelimit)* Add new rate limits (#6689)
+- *(integrations)* Add support for everflow (#6687)
+- *(integrations)* Add support for konnektive (#6688)
+- *(metering)* Cron to monitor billing-events S3 DLQ bucket (#6668)
+- *(analytics)* Implement tracking for playground interactions (#6682)
+- Integrate feature flags across services (#6677)
+- *(webhooks)* Gate webhook-triggered sync completion webhooks behind a flag (#6665)
+
+### Changed
+
+- *(usage)* Remove dead code from the capping migration (#6624)
+- *(traces)* Increase retention priority for jobs start action if flag enabled (#6631)
+- Drop @tabler/icons-react from webapp and connect-ui (#6643)
+- *(webapp)* Migrate to design-system Input/InputGroup (#6636)
+- *(scripts)* Seed local ClickHouse usage data for local dev (#6642)
+- Default export_runner_telemetry to true (#6652)
+- *(webapp)* Adopt design-system Field for ad-hoc form labels (#6663)
+- *(server)* Bump oauth2 access token length limit (#6675)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/63357f08c2f2e852fab7ee76e4813cfbbe095516 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/1c779d9cb3140896c4952dae746a272142dab9bb by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/b68a648d92896fd7727e1742ee60c487e10c0db4 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/bd9cc270bad86e619255850409b10e535742b87b by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/a944f32eb84c2acc9bfdafdf7ff654fca1320792 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/9c9eb53b49bdadd8fbc9b9741ed45459b939fba2 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/4df475df0b1dcdffcd61469c28ab3e4494249b6f by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/4d77f2a022f3e3a3d76329a582ef4b6d9171f291 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/5d09872a4ef04a3f7ec8f694e12791f985426b9b by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/3d8319aa74f8ad0bbe47402878c97b1acabc0c87 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/03a6b7ac35c9350f804077373a1578d2fa89ae00 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/99b5a6fa95c72ccfb9b5103a90d073d70cab8f60 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/f6486c725c5a62803a2d63c82d2a2d7c3a10abe2 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/20fc4ccfd1c49c426ea4d859693b1092ddf01469 by Victor Lang'at
+- Use checkpoints in sync webhooks to check for sync type (#6629)
+
+### Fixed
+
+- *(webapp)* Coerce authorization params to strings on form reset (#6626)
+- *(connect-ui)* Resolve WCAG 2.2 AA violations (#6589)
+- *(ci)* Skip CLI publish/verify on fork PRs (#6627)
+- Fix microsoft-oauth2-cc-cert docs (#6634)
+- *(scripts)* Fix low vulnerability (#6625)
+- Correct public function endpoint scopes (#6578)
+- *(runner)* Move redis requirements to persist (#6566)
+- *(webapp)* Align dashboard page layouts (#6637)
+- *(cli,dashboard)* Resolve symlinked integrations in pull and github links (#6632)
+- *(webapp)* Connections integration column shows provider instead of integration unique_key (#6633)
+- *(providers)* Fix Tanium verification URL and hostname (#6644)
+- *(webapp)* Cap billing content width on wide screens (#6653)
+- *(providers)* Use case-sensitive /Login endpoint for sap-business-one (#6638)
+- *(egress)* Outbound url policy across all customer-controlled egress paths (#6646)
+- Schedule plan change callout message (#6666)
+- *(providers)* ModMed API Key incorrectly expects UUID formatting (#6678)
+- *(providers)* Update RecruitCRM API base URL and endpoints (#6662)
+- *(runner)* Harden function access (#6669)
+- *(connect-ui)* Preserve apiURL base path in API and WebSocket requests (#6695)
+
+## [v0.70.9] - 2026-06-23
+
+### Added
+
+- Public endpoint to deploy function template (#6558)
+- *(integrations)* Add support for ironclad-cc (#6585)
+- *(usage)* Compose filter with breakdown (NAN-5874) (#6545)
+- *(usage)* Drop the 6h CH inner cache from the capping path (#6605)
+
+### Changed
+
+- Update version in manifest
+
+### Fixed
+
+- *(metrics)* Improve traces on startAction (#6612)
+- *(frontend)* Make ConnectUI.open() idempotent (#6611)
+
 ## Managed 1.5.11 (0.70.8)
 
 ## Managed Nango 1.5.11 (application 0.70.8)
