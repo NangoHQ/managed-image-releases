@@ -1,5 +1,156 @@
 # Managed image releases
 
+## Managed 1.6.0 (0.71.0)
+
+## Managed Nango 1.6.0 (application 0.71.0)
+
+- **Released:** 2026-07-20
+- **Docker image:** `nangohq/nango:managed-1.6.0-0.71.0-b27d0d367c67d1bf61f11a01c5e57fd550778b05`
+- **Pin CLI to:** `0.71.0`
+- **Compare:** https://github.com/NangoHQ/nango/compare/27ea2b528e7df47b99d9250c6880753c81cd1e7d...b27d0d367c67d1bf61f11a01c5e57fd550778b05
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(providers)* Add Auvik us6 region (#6707)
+- *(design-system)* Add focus ring to input fields (#6698)
+- *(design-system)* Reduce default form-control height to 32px (#6699)
+- *(mcp)* Register control-plane MCP server (#6659)
+- *(function)* Tweak function input and concurrency (#6697)
+- Add HTTP API reference pages for function endpoints (#6526)
+- *(mcp)* Support client ID metadata documents (CIMD) (#6708)
+- *(cli)* Expose createFunction as an experimental feature (#6714)
+- Reach any value when filtering usage, not just top-N (NAN-6038) (#6674)
+- *(design-system)* Apply AA-safe primary button color (#6724)
+- *(webapp)* Token editor dev tool for live design token tweaking (#6442)
+- *(webapp)* Redesign profile settings with label-left layout (#6671)
+- Add proxy DTO metering (#6709)
+- *(connect-ui)* Add Japanese (ja) language support (#6721)
+- *(integrations)* Add support for google-health (#6650)
+- *(integrations)* Add support for aspire (#6712)
+- *(webhooks)* Add support for google-drive webhooks (#6719)
+- Enable `can_override_docs_connect_url` for Growth+ (#6730)
+- *(node-client)* Add function and provider template methods (#6732)
+- *(providers)* Add proxy base_url to notion-mcp (#6716)
+- *(integrations)* Add support for ninety-io (#6718)
+- *(metering)* Track written row count per S3 export file (#6736)
+- *(integrations)* Add support for haileyhr (#6735)
+- *(mcp)* Add logs list operations tool (#6660)
+- *(integrations)* Add support for dope-security (#6731)
+- *(mcp)* Add logs get operation tool (#6661)
+- *(integrations)* Add support for microsoft-dynamics-365-finance-and-operations (#6726)
+- *(integrations)* Add support for humaans-io (#6727)
+- *(integrations)* Add support for google-calendar-mcp (#6728)
+- *(integrations)* Add support for veed (#6744)
+- *(connections)* Allow patching connection-level webhook_url (#6739)
+- Ingest Data Transfer into Orb (#6758)
+- *(webhooks)* Update google drive webhook script (#6759)
+- *(telemetry)* Implement CLI usage tracking (#6691)
+- *(integrations)* Add support for autosana (#6750)
+- *(integrations)* Add support for trading-economics (#6746)
+- *(integrations)* Add support for leapsome (#6747)
+- *(integrations)* Add support for workramp (#6749)
+- *(integrations)* Add support for sanity-mcp (#6748)
+- *(integrations)* Add support for timetastic (#6745)
+- *(integrations)* Add support for mandrill (#6743)
+- *(cli)* Minimal support for function compilation (#6738)
+- *(integrations)* Add support for ids-fulfillment (#6737)
+- *(billing)* Time-based cutover for HTTP↔S3 event-name suffix swap (#6705)
+- *(integrations)* Add support for phrase (#6766)
+- *(integrations)* Add support for zero (#6767)
+- *(integrarions)* Add support for embat (#6768)
+- *(integrations)* Add support for workato (#6771)
+- *(integrations)* Add support for n8n (#6772)
+- *(integrations)* Add support for millionverifier (#6769)
+- *(integrations)* Add support for ConnectSecure (#6720)
+- *(audit)* Audit-log emit boundary + route wiring (NAN-6214) (#6755)
+- *(webapp)* Add analytics events to the usage page (#6761)
+- *(integrations)* Add support for tripletex (#6300)
+- Add MCP Auth guide (#6785)
+- *(integrations)* Add support for baserow (#6781)
+- *(providers)* Add an optional hostname to salesforce sandbox (#6797)
+- *(webapp)* Edit connection metadata and tags via UI (#6760)
+- *(providers)* Add apple app store connect ui configurations (#6780)
+- *(audit)* Add audit_trail_events ClickHouse table (NAN-6272) (#6787)
+- *(integrations)* Add support for sage-member (#6717)
+- *(integrations)* Allow client credentials for sage intacct to be defined at integration level (#6751)
+- Add Control Plane MCP reference (#6757)
+- *(integrations)* Add support for odoo-api-key (#6807)
+- *(auth)* Add MFA factor storage (#6792)
+- *(integrations)* Add support for datadog oauth (#6796)
+- *(integrations)* Add support for postscript (#6804)
+- *(audit)* Write audit events directly to ClickHouse (fire-and-forget) (NAN-6272) (#6805)
+- *(integrations)* Add support for cerby (#6793)
+- *(integrations)* Add support for veeva-vault-oauth (#6806)
+- *(event-script)* Gate hubspot pre-connection-deletion script with metadata (#6817)
+- *(auth)* Add MFA enrollment settings (#6814)
+- *(webapp)* Show Free-plan usage against plan limits (#6789)
+- Add changelog entries for Management MCP, editable tags/metadata, CIMD (#6821)
+- *(integrations)* Add support for pave (#6818)
+- *(integrations)* Add support for microsoft services using the client credentials flow (#6819)
+- *(ratelimit)* Add 10xl and 12xl rate limit tiers (#6824)
+- Move webhook_url override to top-level field. (#6778)
+- *(integrations)* Add support for vantage-apparel (#6833)
+- *(connect-ui)* Non-root base path via relative base + runtime basepath (#6802)
+
+### Changed
+
+- Update version in manifest
+- *(server)* Move shared function handlers to better file paths (#6681)
+- Document connection-level webhook_url override (#6715)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/3f2aa29f5d80b956341e40cde582082f85dad975 by Victor Lang'at
+- Prefer shared-env collaboration for multiplayer DX (#6733)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/96a64bc741e6d89be704fe77d1980b7835378806 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/8bcb3b5d785ccce13ad7ca758d333b374598d45e by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/f84d5741abf2a9764abd6e550dbf49bc31ca0d66 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/e286bd20c5795f9e8bfbc9053e65669941c08c89 by Victor Lang'at
+- Improve google drive webhook docs (#6756)
+- *(webapp)* Remove unused usageBreakdown feature flag (#6752)
+- Speed up deploys (#6770)
+- *(scripts)* Realistic ClickHouse seed data and quieter output (#6676)
+- Monitor how many tasks are dequeued (#6774)
+- *(orch)* Skip dequeue query when group lock is contended (#6782)
+- *(webapp)* Route all analytics events through typed catalog (#6784)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/6bf416ff5f996743c3ea37417a13e2f73cddb8ff by Marcin Dobrowolski
+- *(design-system)* Sync generated tokens (#6788)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/735d210f2cada157d547c91fb0148ce2f3337cb6 by Victor Lang'at
+- *(persist)* Fetch a narrow internal auth context on the auth hot path (#6800)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/4af2d561b9a865c9dd54444ff26e716cb5c85bb4 by Tom Shani
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/340f5d4b7b000df98b5a6bb3bbf16342591c0c81 by Tom Shani
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/ab39aef4d18b793d39b23abdfb2ccf5f48c44fd1 by Tom Shani
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/84f3261851bbd0b79eedc7f4e3aa77e9a4bbec1e by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/50b570fb794db91b7da47aacf69c836064c0fdcb by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/1320cb5d64a30806a75a683f5c89fd072b9a7ae5 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/65022fdb88cc3c5062f890e7ee3f89afd8d2d055 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/b45c06cc663db0f874402211ab12e73d49f30f72 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/6e77382c74b911ab142aa8e8af87ea997b78ae8f by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/a7f2621ce4a1ed2e4a22936ffabfd1ed96fa4aeb by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/fddb32f77b2f08fe8fdccfe28b9c2089222e86db by Victor Lang'at
+- Update API count from 800+ to 900+ (#6834)
+
+### Fixed
+
+- *(csp)* Allow Plain widget and disable Zod JIT in Connect UI (#6696)
+- *(webapp)* Make usage chart legend series clearly toggleable (#6670)
+- *(providers)* Loosen acumatica instance url pattern (#6703)
+- *(webapp)* Preserve query string when switching hash-navigated tabs (#6686)
+- *(webapp)* Fix focus rings in sidebar navigation (#6711)
+- *(webapp)* Enable auth submit buttons by default (#6722)
+- *(server)* Allow github raw templates in helmet CSP (#6725)
+- *(auth)* Surface provider error details for client credentials and microsoft admin token failures (#6723)
+- *(providers)* Loosen sap-business-1 service layer url pattern (#6734)
+- *(webapp)* Persist records docs banner dismissal (#6754)
+- *(server)* Allow data: fonts and blob: images in CSP (#6742)
+- *(webapp)* Size Logs table columns to fit their content (#6753)
+- *(server)* Bump OAuth2 CC token max length (#6798)
+- *(providers)* Callrail apiKey pattern accepts ctrk_ prefix longer hex (#6776)
+- Docs generation for functions (#6799)
+- *(auth)* Make user emails case-insensitive (#6762)
+
 ## Managed 1.5.12 (0.70.9)
 
 ## Managed Nango 1.5.12 (application 0.70.9)
