@@ -1,5 +1,109 @@
 # Managed image releases
 
+## Managed 1.6.1 (0.71.2)
+
+## Managed Nango 1.6.1 (application 0.71.2)
+
+- **Released:** 2026-07-26
+- **Docker image:** `nangohq/nango:managed-1.6.1-0.71.2-6c4a526ed4928b2fb815f9933b502722230f50e6`
+- **Pin CLI to:** `0.71.2`
+- **Compare:** https://github.com/NangoHQ/nango/compare/b27d0d367c67d1bf61f11a01c5e57fd550778b05...6c4a526ed4928b2fb815f9933b502722230f50e6
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(auth)* Gate sign-in behind MFA (#6822)
+- *(auth)* Add MFA sign-in challenge (#6832)
+- *(audit)* RBAC-gated account-scoped audit trail read API (NAN-6343) (#6831)
+- *(design-system)* Validate removed tokens against webapp usages (#6816)
+- *(auth)* Shadow cache to measure auth cache hit ratio (#6858)
+- *(webapp)* Reach usage breakdown values and keep long legends readable (#6841)
+- *(integrations)* Add support for optum-real (#6852)
+- *(webapp)* Stack billing page sections, drop tabs (#6847)
+- *(webapp)* Bring collapsible usage table to paid plans (#6861)
+- *(integrations)* Add support for dentally (#6862)
+- *(design-system)* Lift Badge into design system (#6842)
+- *(auth)* Cache the persist auth context in-process (#6886)
+- *(integrations)* Add support for semble (#6860)
+- *(integrations)* Add support for ergo (#6863)
+- *(integrations)* Add support for dynamic-mockups (#6866)
+- *(account)* Add same-domain-account search (#6827)
+- *(integrations)* Add support for hubstaff (#6865)
+- *(design-system)* Lift Dialog into design system NAN-6410 (#6869)
+- *(design-system)* Add AlertDialog, replace ConfirmDialog (#6892)
+- *(webapp)* Audit-log dashboard UI (NAN-6343) (#6859)
+- *(integrations)* Add support for youcanbook-me-public (#6895)
+- *(integrations)* Add support for resova (#6868)
+- *(integrations)* Add support for spendesk (#6890)
+- *(integrations)* Add support for glean (#6897)
+- *(auth)* Show per-member 2FA status on team settings (#6894)
+- *(integrations)* Add support for chatgpt-enterprise (#6896)
+- *(connect-ui)* Honor custom server websockets path (#6891)
+
+### Changed
+
+- *(utils)* Remove Sentry integration from Node services (#6864)
+- *(scripts)* Move dependency to devDependency (#6875)
+- *(auth)* Remove the persist-light-auth-context rollout flag (#6888)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/9b3060a68b605d7940d3352140d4c523234a05bf by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/995baa9a38663109844a497e5faee3c5ae27e35f by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/2ab623142ac23407437dfd3776e4bede3177990b by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/7f6526743a2f8332c4ce0cf9dff4a4c56854f548 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/02bcd91761dfb6682dc72d84bd0199e1f6e50f03 by Victor Lang'at
+
+### Fixed
+
+- *(billing)* Log Orb ingest failure cause (#6856)
+- *(webhooks)* Skip HubSpot import events before dispatch (#6857)
+- *(connect-ui)* Show error instead of infinite loading spinner (#6777)
+- *(records)* Stop autoPruningCandidate test flaking in CI (#6848)
+- *(orchestrator)* Change NOTIFY to use parameterized pg_notify (#6867)
+- *(in-app)* Fix the brand bg color to respect the app theme (#6837)
+- Vulns (#6874)
+- *(scripts)* Fix package file (#6889)
+- *(webapp)* Match paid usage header to free plan (#6885)
+- *(proxy)* Forward provider response headers on the buffered path (#6701)
+- Orb ingestion errors on duplicate idempotency keys (#6900)
+- *(providers)* Cursor-admin api key description says Greenhouse (#6911)
+
+## [v0.71.2] - 2026-07-21
+
+### Added
+
+- *(webapp)* Free usage charts as progress toward the cap (#6790)
+- *(design-system)* Lift Card into design system (#6835)
+- *(webapp)* Alert Free accounts nearing or hitting plan limits (#6791)
+- *(webhooks)* Add jobber webhook support (#6836)
+- *(webapp)* Edit connection webhook URL override in Settings (#6740)
+
+### Changed
+
+- Flatten management mcp reference (#6843)
+- *(billing)* Retire the parity-phase getUsage source toggle (#6764)
+- *(jobs)* Log underlying cause of 'runner unable to execute' error (#6851)
+- *(scheduler)* Avoid unnecessary db roundtrip on task retirement (#6810)
+
+### Fixed
+
+- *(server)* Stop proxy integration test hitting real GitHub API (#6844)
+- *(providers/zendesk)* Request expires_in so tokens can be refreshed (#6763)
+- *(server/node-sdk/runner-sdk)* Fix types at API boundary to account for dates in credentials being serialized to strings (#6820)
+
+## [v0.71.1] - 2026-07-20
+
+### Changed
+
+- Update version in manifest
+
+### Fixed
+
+- *(server)* Route connectwise-psa webhooks by ProductInstanceId (#6808)
+- *(docs)* Raise Ask AI panel above the navbar (#6838)
+
 ## Managed 1.6.0 (0.71.0)
 
 ## Managed Nango 1.6.0 (application 0.71.0)
