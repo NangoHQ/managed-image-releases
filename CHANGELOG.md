@@ -1,5 +1,52 @@
 # Managed image releases
 
+## Managed 1.6.2 (0.71.2)
+
+## Managed Nango 1.6.2 (application 0.71.2)
+
+- **Released:** 2026-07-29
+- **Docker image:** `nangohq/nango:managed-1.6.2-0.71.2-fad81b1da5b2495db013a2b6cd922049ed57da2c`
+- **Pin CLI to:** `0.71.2`
+- **Compare:** https://github.com/NangoHQ/nango/compare/6c4a526ed4928b2fb815f9933b502722230f50e6...fad81b1da5b2495db013a2b6cd922049ed57da2c
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(webhooks)* Add GitLab webhook routing (#6683)
+- *(webapp)* Redesign 2FA setup screens (#6878)
+- *(types)* Enforce audit coverage via an endpoint opt-out policy (NAN-6269) (#6916)
+- *(integrations)* Add Agentcard (#6795)
+- *(scheduler)* Add unique index to ensure one active task per schedule (#6925)
+- *(audit)* Record control-plane mutation events, type-locked to endpoint policy (NAN-6444) (#6917)
+- *(integrations)* Add support for adoxx-cc (#6936)
+- Add self-hosted Management MCP setup (#6937)
+- *(audit)* Publish audit events to pub/sub, consume in metering (NAN-6271) (#6783)
+- *(providers)* Allow servicenow to use hostname instead of subdomain (#6938)
+- Add changelog entry for two-factor authentication (CON-159) (#6949)
+
+### Changed
+
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/3a6f60f05c332c72e22dcf038f09df4e241b77a9 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/a1dbfcff9c17557bc97dbbab4e41e4d2aefc615b by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/b44cd16977f438bfe630631626d042778ae8b02c by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/2dec270fdaea56dfb8efd17d6bff91124f1cf89e by Victor Lang'at
+- *(scheduler)* Count queue sizes with count(*) so the index answers it alone (#6923)
+- *(orch)* Don't wait for locked schedule when scheduling immediate task (#6926)
+- *(mcp)* Rename management server env var (#6935)
+
+### Fixed
+
+- *(mcp-generic)* Omit empty client_secret on token refresh (#6921)
+- Js-yaml upgrade (#6903)
+- *(providers)* Allow region interpolation in the Ironclad authorization url (#6930)
+- *(security)* Oauth token outbound validation (#6672)
+- *(docs)* Stop changelog Update blocks clipping off the left edge (NAN-6464) (#6942)
+
 ## Managed 1.6.1 (0.71.2)
 
 ## Managed Nango 1.6.1 (application 0.71.2)
