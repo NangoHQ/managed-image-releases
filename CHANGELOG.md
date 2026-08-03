@@ -1,5 +1,59 @@
 # Managed image releases
 
+## Managed 1.6.3 (0.71.2)
+
+## Managed Nango 1.6.3 (application 0.71.2)
+
+- **Released:** 2026-08-03
+- **Docker image:** `nangohq/nango:managed-1.6.3-0.71.2-d9783cb2211312d673184aff9974df9535972863`
+- **Pin CLI to:** `0.71.2`
+- **Compare:** https://github.com/NangoHQ/nango/compare/fad81b1da5b2495db013a2b6cd922049ed57da2c...d9783cb2211312d673184aff9974df9535972863
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(audit)* Dedicated audit ClickHouse database + own migration (NAN-6339) (#6934)
+- Add function deployment status endpoint (#6729)
+- *(audit)* Batch the consumer's writes and stop dropping events on failure (#6954)
+- *(audit)* Record MFA events (enroll/enable/disable/recovery/verify) (#6947)
+- *(integrations)* Add support for syncore (#6939)
+- *(audit)* Record billing payment-method add/remove (#6948)
+- *(audit)* Read and write audit events from the dedicated audit database (NAN-6339) (#6962)
+- *(integrations)* Add support for transporeon-oauth2-cc (#6957)
+- *(audit)* Record sync command actions (pause/start/trigger/cancel) (#6945)
+- *(integrations)* Refractor apple-app-store and use JWT method instead (#6955)
+- *(integrations)* Add support for ingenious-build (#6969)
+- *(audit)* Record create/deploy/invite/pause-start lifecycle events (#6943)
+- *(integrations)* Add support for basin (#6940)
+- *(audit)* Record authentication events (login/logout/signup/reset + SSO) (#6946)
+- *(mtls)* Add mtls support to internal service-to-service calls (#6928)
+
+### Changed
+
+- Update version in manifest
+- Update external contribution guidelines (#6944)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/ba00535c07b7f280eb875b6ef96f01a4cfdc48a2 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/970a26b1ab2803e7ebdb36e1278111ad674945eb by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/b5294dc1c7122280307eeefce3553bc784dd5eee by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/a590347c4411172566fe0e96b167b78df03cbdea by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/632189a4f732190f6d89f6e5a7ceee9164cfb036 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/dc394ae65eb9ca7b9a465fa821a22f64ecfe7fc1 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/8b302c3a8af5819009448c77032adfbc17376ce6 by Victor Lang'at
+
+### Fixed
+
+- *(mfa)* Enforce MFA on managed auth logins (NAN-6463) (#6950)
+- *(providers)* Allow dots in contentstack api domain (#6913)
+- *(audit)* Move audit middleware logic to unit tests, one integration suite for live-stack cases (#6952)
+- *(server)* Fix token refresh race condition (#6941)
+- *(webhooks)* Fix jira webhook routing (#6967)
+- *(auth)* Require explicit email confirmation before sign-in (#6899)
+- *(server)* Remove credential scope from connect sessions (#6959)
+
 ## Managed 1.6.2 (0.71.2)
 
 ## Managed Nango 1.6.2 (application 0.71.2)
