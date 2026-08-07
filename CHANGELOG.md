@@ -1,5 +1,97 @@
 # Managed image releases
 
+## Managed 1.6.4 (0.71.3)
+
+## Managed Nango 1.6.4 (application 0.71.3)
+
+- **Released:** 2026-08-07
+- **Docker image:** `nangohq/nango:managed-1.6.4-0.71.3-3d6911d08f7a24b2b34dc70b38c4fc2ff043fbfc`
+- **Pin CLI to:** `0.71.3`
+- **Compare:** https://github.com/NangoHQ/nango/compare/d9783cb2211312d673184aff9974df9535972863...3d6911d08f7a24b2b34dc70b38c4fc2ff043fbfc
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(audit)* Address review comments on the audit consumer (#6958)
+- *(scheduler)* Per-environment concurrency overrides (#6877)
+- *(audit)* Filter the audit log by resource, and by resource + action (#6979)
+- Add July 2026 changelog updates: (#7006)
+- *(server)* Allow custom properties on integration import (#7008)
+- *(auth)* Add account discovery during new-user onboarding (#6879)
+- *(auth)* Add account invitation requests during onboarding (#6918)
+- *(integrations)* Improve google ads to request for developer token (#7014)
+- *(integrations)* Add support for myob (#7018)
+- *(integrations)* Add support for trustpilot (#7009)
+- *(integrations)* Add support for ukg-pro-wfm-ropc (#7015)
+- *(integrations)* Add support for lovable-mcp (#7019)
+- *(integrations)* Add support for holded-v2 (#7020)
+- *(integrations)* Add support for back-market (#7021)
+- *(integrations)* Add support for threads (#7028)
+- *(byoc)* Add charm-sandbox environment (#7038)
+- *(integrations)* Add support for judge.me (#7031)
+- *(mcp)* Add integrations get tool (#7001)
+- *(integrations)* Add support for onshape (#7022)
+- *(function)* Add /functions/deployments/bundle endpoint (#7005)
+- *(mcp)* Add integrations create tool (#7002)
+
+### Changed
+
+- *(shared)* Move functions/ to functions/legacy (#6982)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/6c77111c22306d9feb17ff561ba7b1ff9aacfb7c by Victor Lang'at
+- *(audit)* Drop the unused usage.audit_trail_events table (NAN-6339) (#6975)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/c6a74f000da0a1625f510286b3ccef9233d9a5ac by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/35d1dc0a809b30faaf0189df8ee10620ace041f7 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/e56efb872d4a74a613f3d9bfca59577394befe18 by Victor Lang'at
+- Move flow service to server (#7012)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/368202d36f41223ca651a0fb976827c94e95dc6d by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/ce404c60b6fa72e164d6097625b9dd75c510e039 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/b9a32621f1be73f457e161122a60eb660cc83ebd by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/29d132cb8959b325c7afe972219f257d5c7b778c by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/3b75b285cb609b197f6160ca5710ad97a1202849 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/2318910751f936093662bbe5567599ec5602c4dd by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/9dc258de80bab7c6799f787d395d8652095513aa by Victor Lang'at
+- *(mcp)* Rename control plane server to management (#7013)
+
+### Fixed
+
+- Upgrade packages (#6997)
+- *(function)* Align types between types package and runner-sdk (#6964)
+- Ipv6 classification (#6998)
+- *(scheduler)* Give each suite its own db schema and close its pool (NAN-6500) (#6988)
+- /connect/telemetry fails if timestamp is outside of allowed range (#6999)
+- *(webapp)* Don't prefill overrideAuthParams with integration defaults on connection create (#6990)
+- *(proxy)* Drop unresolved headers (#7027)
+- Upgrade dd-trace (#6905)
+- Unidic upgrade for vulns (#7044)
+- *(logs)* Upgrade otel packages (#7046)
+
+## [v0.71.3] - 2026-08-03
+
+### Added
+
+- *(integrations)* Add support for zoom-cc (#6953)
+- *(mcp)* Add integrations list tool (#6977)
+- *(integrations)* Add support for pipelinecrm (#6981)
+- *(impersonation)* Require the admin's own MFA to impersonate (NAN-6481) (#6961)
+
+### Changed
+
+- *(ci)* Amortize module imports in integration tests (NAN-6488) (#6970)
+- Wrap long endpoint URLs in the API playground (#6986)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/6d2fa6b9f2a74c9b8f6a6c9519e8ce47b481a621 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/5d6901b2138d64c3c233684dcd65f3dfb2472dfc by Victor Lang'at
+- *(audit)* Derive the audit event vocabulary from one table (#6983)
+- Db migrations and types for functions configs (#6960)
+- Update version in manifest
+
+### Fixed
+
+- *(audit)* Allow account 0 to record audit events (#6978)
+
 ## Managed 1.6.3 (0.71.2)
 
 ## Managed Nango 1.6.3 (application 0.71.2)
