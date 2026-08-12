@@ -1,5 +1,79 @@
 # Managed image releases
 
+## Managed 1.6.5 (0.71.4)
+
+## Managed Nango 1.6.5 (application 0.71.4)
+
+- **Released:** 2026-08-12
+- **Docker image:** `nangohq/nango:managed-1.6.5-0.71.4-b6a11be5e83e48fc2f4758685ce2d6a12d817fad`
+- **Pin CLI to:** `0.71.4`
+- **Compare:** https://github.com/NangoHQ/nango/compare/3d6911d08f7a24b2b34dc70b38c4fc2ff043fbfc...b6a11be5e83e48fc2f4758685ce2d6a12d817fad
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(integrations)* Add support for hibob-oauth (#7041)
+- Add account API key CRUD endpoints (#7024)
+- *(integrations)* Add support for Garmin OAuth2 (#7037)
+- *(email)* Add generic HTTP API email provider (#7029)
+- *(webapp)* Redesign billing plans section (#6907)
+- *(cli)* Deploy functions (#7068)
+- *(webapp)* Redesign team settings page (#6904)
+- *(providers)* Add luma-v2 targeting public-api.luma.com (#6922)
+- *(integrations)* Add support for okta api key (#7073)
+- *(integrations)* Add support for yokoy (#7077)
+- *(environment)* Rotate webhook signing key (NAN-6550) (#7082)
+- *(integrations)* Add support for viewpoint-vista (#7048)
+- *(integrations)* Add support for revolut-business (#7075)
+- *(mcp)* Add connections list tool (#7057)
+- *(logs)* Add a log retention env var (#7045)
+- *(mcp)* Add integrations delete tool (#7032)
+
+### Changed
+
+- Link self-hosting guide from Management MCP changelog entry (#7071)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/532a3d96454bc35ff996a64f6f45125ba56d2f21 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/0cc2143233d4b3fd62ff86e368acdf6a3725ff95 by Victor Lang'at
+
+### Fixed
+
+- *(webapp)* Disallow crawling of app.nango.dev in robots.txt (#7074)
+- *(cli)* Derive integrationId from path root (#7072)
+
+## [v0.71.4] - 2026-08-10
+
+### Added
+
+- *(integrations)* Add ServiceNow JWT bearer authentication (#7010)
+- Implement functions bundle deployment endpoint (#7035)
+- *(integrations)* Add regional instance support for NinjaOne RMM providers (#7039)
+- Account-level api keys (#6991)
+- Add integration-scoped functions deployment (#7055)
+- *(mcp)* Add integrations update tool (#7051)
+- *(integrations)* Support Devin v3 credentials (#7065)
+- *(integrations)* Add support for redo (#7049)
+- *(integrations)* Add support for facebook-system-user (#7040)
+- *(integrations)* Add support for shopline (#7047)
+
+### Changed
+
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/f499bb42bb87451f2122b967d5f824d36cced994 by Victor Lang'at
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/3196dff2ef40f31ac60e25413350b7ad8d698660 by Victor Lang'at
+- *(authz)* Make environment optional on request locals (#6971)
+
+### Fixed
+
+- *(auth)* Surface underlying provider errors for JWT and TwoStep auth failures (#6803)
+- Vulns (#7050)
+- Retain peer dependencies in docker images  (#7059)
+- Fix docs for zendesk (#7058)
+- *(webapp)* Keep PHI out of PostHog and Sentry (#6906)
+
 ## Managed 1.6.4 (0.71.3)
 
 ## Managed Nango 1.6.4 (application 0.71.3)
