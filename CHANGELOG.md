@@ -1,5 +1,71 @@
 # Managed image releases
 
+## Managed 1.6.6 (0.71.4)
+
+## Managed Nango 1.6.6 (application 0.71.4)
+
+- **Released:** 2026-08-17
+- **Docker image:** `nangohq/nango:managed-1.6.6-0.71.4-3b2c0410e3b8444d5eacb45817f74ee8d462711a`
+- **Pin CLI to:** `0.71.4`
+- **Compare:** https://github.com/NangoHQ/nango/compare/b6a11be5e83e48fc2f4758685ce2d6a12d817fad...3b2c0410e3b8444d5eacb45817f74ee8d462711a
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(mcp)* Add missing schema and hints to management mcp tools (#7090)
+- Add account API key dashboard (#7025)
+- *(webapp)* Redesign billing details section (#6908)
+- *(webapp)* Address post-merge Account API keys UI review (#7095)
+- *(integrations)* Add support for chartboost (#6463)
+- *(integrations)* Add support for neon (#6823)
+- *(integrations)* Add support for meilisearch (#6713)
+- *(integrations)* Add support for livetennisapi (#6910)
+- *(server)* Add public environment management endpoints (#6973)
+- *(integrations)* Add support for agentline (#7102)
+- *(integrations)* Add support for agency-zoom (#7105)
+- *(integrations)* Add support for chili-pipper (#7103)
+- *(integrations)* Add support for statsig (#7104)
+- *(integrations)* Add support for factorial api key (#7088)
+- *(feature-flags)* NAN-6476 serve flags from env vars (#7080)
+- *(webapp)* Add change password to user profile (#6931)
+- *(ci)* Add Storybook PR preview deploys (#7084)
+- *(mcp)* Add Connect Session creation tool (#7108)
+- *(shared-credentials)* Allow for github-app to be added as a shared credential (#7069)
+- *(webapp)* Add a primary action to the billing page header (#7111)
+- *(server)* Cleanup endpoint (#7126)
+- Add POST /functions/invocations (#7106)
+- *(metrics)* Add provider config key to metrics - opt in only (#7120)
+- *(design-system)* Add link variants to Button per Figma (#6887)
+- *(server)* Let the dashboard's API target be configured separately from NANGO_SERVER_URL (#7064)
+
+### Changed
+
+- Update version in manifest
+- *(webapp)* Move InputOTP out of components-v2 (#7089)
+- *(env)* Centralize environment creation validation (#6972)
+- *(action)* Extract a non-HTTP action executor from runAction (NAN-6591) (#7115)
+- Replace mentions of secret key with API key (#7107)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/ad1f47ff31378b945e1925b5d464608ec2c6edfb by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/172e3507fc38b648ef382135d8e9fd15679ea51e by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/78a950c69fab9ac98dc3546b4f1e092cd57ee6e5 by Steven Zhou
+- *(webapp)* Migrate StyledLink to design-system Button (#7112)
+
+### Fixed
+
+- Keep auth tokens out of PostHog and Sentry (#7078)
+- *(webapp)* Align env settings panel border (#7091)
+- *(design-system)* Migrate border.interactive to border.input (#7086)
+- *(mfa)* Tolerate authenticator clock drift (NAN-6568) (#7097)
+- *(inputs)* Render placeholders with a dedicated token (#7113)
+- *(design-system)* Sync danger-family tokens from design/tokens (#7083)
+- Js-yaml upgrade (#7124)
+- Upgrade postcss fix high transitive (#7125)
+- *(webapp)* Improve usability of billing emails input field (#7134)
+
 ## Managed 1.6.5 (0.71.4)
 
 ## Managed Nango 1.6.5 (application 0.71.4)
