@@ -1,5 +1,181 @@
 # Managed image releases
 
+## Managed 1.6.7 (0.71.5)
+
+## Managed Nango 1.6.7 (application 0.71.5)
+
+- **Released:** 2026-08-31
+- **Docker image:** `nangohq/nango:managed-1.6.7-0.71.5-b14e3aa3e113fd0996a2484e6ba7befe3261ecc1`
+- **Pin CLI to:** `0.71.5`
+- **Compare:** https://github.com/NangoHQ/nango/compare/3b2c0410e3b8444d5eacb45817f74ee8d462711a...b14e3aa3e113fd0996a2484e6ba7befe3261ecc1
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(usage)* Reconcile usage and billable data transfer (#7265)
+- *(webapp)* Show customers the usage and limits they're billed on using new pricing (#7251)
+- *(authz)* Namespace decides the where, and drop the top-level wildcard (#7287)
+- *(audit)* Check every event's metadata against the vocabulary (#7276)
+- *(mcp)* Add sync_set_state management tool (#7256)
+- *(providers)* Add GitLab (Group Access Token) provider (#7199)
+- *(audit)* Name the deprecated public-key flow as its own actor (#7302)
+- *(kms)* Add support for gcp kms (#7291)
+
+### Changed
+
+- *(audit)* Split the audit middleware into one file per resource (#7271)
+- *(audit)* Split the store contracts from their implementations (#7272)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/8c33aed0ede39e8b56989dffcbaf8e388ffe8f64 by Victor Lang'at
+
+### Fixed
+
+- *(server)* Count every shadow comparison, not just the failures (#7263)
+- *(server)* Datadog tag and record every authorization comparison (#7292)
+- *(orchestrator)* Count rate limited and duplicate tasks as rejected (NAN-6809) (#7294)
+- *(functions)* Metadata and checkpoint is working. do not gate them (#7289)
+- *(persist)* Stream deleteOutdatedRecords progress to avoid client timeout on large deletes (#7192)
+- *(audit)* Name the integration when a bulk sync pause or start targets nothing (NAN-6791) (#7304)
+
+## [v0.71.5] - 2026-08-27
+
+### Added
+
+- *(server)* Add public environment api-keys management endpoints (#7007)
+- *(team)* Prefill invite form from join request (NAN-6564) (#7093)
+- *(integrations)* Add support for transporeon carrier (#7140)
+- Add changelog entry for dashboard password change (#7141)
+- *(plans)* Add audit trail entitlement columns (NAN-6483) (#6966)
+- *(design-system)* Lift Alert into design system (#7122)
+- *(audit)* Gate the audit trail on plan entitlements (NAN-6484) (#6968)
+- *(mcp)* Add connections get tool (#7066)
+- *(audit)* Retain audit events for a year, not 90 days (NAN-6485) (#7162)
+- *(providers)* Add Hail (#6840)
+- Add shopify webhook docs (#7114)
+- *(integrations)* Add support for Pushpay ChMS V2 (#7011)
+- *(webapp)* Add a billing & usage summary strip (#7109)
+- *(billing)* Alert customers when an invoice is overdue (#6845)
+- *(integrations)* Add support for CDW (#7155)
+- *(server)* Add agent session persistence (NAN-6593) (#7152)
+- *(runner)* Tighten runner egress networkpolicy (#7144)
+- *(server)* Track usage of deprecated functions endpoint (#7153)
+- *(functions)* Add logging/tracking to POST /functions/invocations (#7160)
+- *(billing)* Show overdue alert to all members (#7177)
+- *(server)* Mint and validate agent session tokens (NAN-6596) (#7169)
+- *(mfa)* Require a second factor to change or reset a password (NAN-6586) (#7110)
+- *(webapp)* Show billed-this-month spend in the summary strip (#7145)
+- *(integrations)* Add support for sage-300-cre (#7163)
+- *(integrations)* Add support for stedi (#7185)
+- *(integrations)* Add support for omni analytics (#7186)
+- *(audit)* Record connection.created for every creation route (NAN-6470) (#7146)
+- *(mcp)* Add proxy request tool (#7135)
+- *(integrations)* Add support for athenahealth (#7187)
+- *(integrations)* Add RyderShip integration (#6651)
+- *(integrations)* Add support for splunk (#6567)
+- *(integrations)* Add support for streamline-ai (#7161)
+- *(audit)* Export the audit trail as CSV from the dashboard (#7175)
+- *(integrations)* Add support for epost-klara (#7189)
+- *(logs)* Add an actor to operations (NAN-6592) (#7184)
+- *(kvstore)* Sliding window rate limiter (NAN-6609) (#7116)
+- *(orchestrator)* Add immediate task throttling (NAN-6404) (#7170)
+- *(scheduler)* Support per-group task cap overrides (#7154)
+- *(persist)* Enforce connection-to-environment ownership on all routes (#7198)
+- *(usage)* Add v2 function execution aggregates (#7172)
+- *(design-system)* Lift Tooltip into design system (#7176)
+- *(webapp)* Align Billing & usage page with the latest designs (#7139)
+- *(server)* Track usage of the connections search param (#7179)
+- *(audit)* Mark events reached through an impersonation session (#7183)
+- *(audit)* Record the scopes an API key was granted, on every route (#7212)
+- *(mcp)* Add functions list tool (#7182)
+- *(server)* Add webhook for recovered oauth connection (#7202)
+- *(billing)* Let customers set spend alerts (#7180)
+- *(audit)* Record sync.triggered on the public API, and unify sync audit events across public and private (NAN-6715) (#7210)
+- *(mcp)* Track tool call outcomes in Datadog (#7226)
+- *(audit)* Identify deployed functions by integration and name, and record the deploy source (#7224)
+- *(authz)* Add grant language and roles (NAN-6657) (#7218)
+- Add documentation tools to management MCP (#7211)
+- *(agent-sessions)* Resolve tenant connection selectors (NAN-6594) (#7217)
+- *(usage)* Export and cap function runtime in started seconds (#7173)
+- Add changelog entries for account API keys, team join at signup, and Japanese Connect UI (#7234)
+- Add GET /functions/invocations/:id endpoint (#7229)
+- Add function_runtime in plan with default=lambda (#7230)
+- *(audit)* Add the missing details to failed connection and webhook events (#7242)
+- *(auth)* Internal service auth (#7167)
+- *(integrations)* Add support for vincere (#7079)
+- *(audit)* Let an impersonated session read a recorded account's trail (#7246)
+- *(audit)* Count recorded and dropped audit events per resource (#7247)
+- *(server)* Track account ID in management MCP metrics (#7248)
+- *(mfa)* Record why an MFA verification was rejected (NAN-6615) (#7216)
+- *(server)* Normalized principal and shadow evaluation (NAN-6657) (#7237)
+- *(server)* Compile a toolset policy into a resolved tool list (NAN-6595) (#7231)
+- *(server)* Add POST /sessions to create an agent session (NAN-6597) (#7232)
+- *(server)* Serve a session-scoped MCP endpoint at /session/{id}/mcp (NAN-6600) (#7239)
+- *(mcp)* Add deploy function tool (#7213)
+- *(mcp)* Add deploy template tool (#7214)
+- *(mcp)* Add deployment status tool (#7215)
+- *(audit)* Stop auditing the public metadata and sync trigger endpoints (#7269)
+- Show per-metric charges for paid plans (#7208)
+- *(functions)* Support for http trigger (#7250)
+- *(runner)* Split persist_logs DT telemetry callsites (#7249)
+- *(metering)* Export runner->persist data transfer to Orb (#7253)
+
+### Changed
+
+- Update version in manifest
+- Link self-hosted 2FA setup from changelog entry (#7137)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/7c3f0df6ece37b0175cf7009ce5ba0a7bf5f3150 by Victor Lang'at
+- *(design-system)* Put Design System first in Storybook (#7138)
+- Document public environment management APIs (#7148)
+- Start MDX body headings at H2 (#7194)
+- Demote connect guide H1 headings to H2 (#7197)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/91ecf3e04fb0523ec534d175e70c40244dc1bde3 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/59236082c6afed77259e4454611af1e521bf1729 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/32568c4f8c95e79117da63ea443e61e16cf4ee52 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/80803b3b93c962dc4f550cf5dd610a0a982a6fa7 by Quentin de Quelen
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/b521e55f70398e1bb519a1e9aef7e4a594936b6e by Victor Lang'at
+- PostInvocation create a orchestrator task (#7195)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/965f2d99e8529286b8a7c6c0cd325311fd25667c by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/a15a14d386a12a4326634ddeb10fe64f59eb46e4 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/4afb9793b2f1ee919b1663a82aba217721b13ed8 by Victor Lang'at
+- Changelog for Management MCP tools, connection recovery webhook, and 2FA on password changes (#7238)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/b8bd9f83607f5e7154dfbbcf4895e9652603e2b8 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/80f9c8da4c24ef3d8d23fd7e2ec24384fc553fce by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/ffb3660049ff396b95ae64e48825f3001c9f6533 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/a16b84511c0f588e4a03472e84c8d336672ce1ef by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/5a61467f333264adb4b09162a67f24a204f29b5a by Victor Lang'at
+- Execute simple function (#7219)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/ace291ffa324bebe0ff746cc3c2c7757065a5d9f by Victor Lang'at
+- Link Management MCP reference to coding agent setup (#7259)
+- Refresh coding agent MCP setup (#7252)
+
+### Fixed
+
+- *(server)* Emit MCP schemas as JSON Schema 2020-12 (#7147)
+- *(mfa)* Reuse the session's recent MFA verification for impersonation (NAN-6614) (#7128)
+- *(webapp)* Properly handle oauth_scopes_override (#7034)
+- *(billing)* Filter overdue invoices by due date (#7168)
+- *(auth)* Bind invitation signup tokens to invited email (#7151)
+- *(sync)* Don't resume manually paused syncs on connection reauth (#7136)
+- *(audit)* Stop one bad event from duplicating the ones batched with it (#7166)
+- *(providers)* Update instagram authorization url (#7190)
+- Fix heading hierarchy on core and integration pages (#7201)
+- *(webapp)* Overdue alert sends you to the billing page (#7191)
+- *(webapp)* Correct the spend headline's reveal and tooltip (#7196)
+- *(connect-ui)* Pre-bundle react/jsx-runtime in vitest config (#7205)
+- *(server)* Harden pre/post connection proxy request (#7206)
+- *(providers)* Accept any Auvik region instead of a fixed enum (#7223)
+- *(audit)* Identify an accepted or declined invite by the user, not the email (#7225)
+- *(audit)* Align the field order and the target format across every read surface (#7241)
+- *(audit)* Record what a user update changed (#7240)
+- *(audit)* Record the integration's name and provider on its events (#7243)
+- *(audit)* Record which environment a public API key was created in (#7245)
+- *(onboarding)* Rank team suggestions by users on the matching domain (#7236)
+- *(design-system)* Align toast and compact Alert with the Figma spec (#7244)
+- *(audit)* Record the login when SSO holds it for MFA (#7255)
+
 ## Managed 1.6.6 (0.71.4)
 
 ## Managed Nango 1.6.6 (application 0.71.4)
