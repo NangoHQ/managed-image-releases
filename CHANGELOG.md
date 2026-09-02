@@ -1,5 +1,88 @@
 # Managed image releases
 
+## Managed 1.6.8 (0.71.6)
+
+## Managed Nango 1.6.8 (application 0.71.6)
+
+- **Released:** 2026-09-02
+- **Docker image:** `nangohq/nango:managed-1.6.8-0.71.6-b0ce6392ab8ed84e08902b25e21675946a0939ea`
+- **Pin CLI to:** `0.71.6`
+- **Compare:** https://github.com/NangoHQ/nango/compare/b14e3aa3e113fd0996a2484e6ba7befe3261ecc1...b0ce6392ab8ed84e08902b25e21675946a0939ea
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(mcp)* Add providers get tool (#7283)
+
+### Changed
+
+- *(granola)* Correct plan requirement and desktop app flow (#7347)
+- Alphabetize the APIs & Integrations nav list (#7345)
+
+### Fixed
+
+- *(sync)* Resolve variant-scoped model recordCount (#7270)
+- *(audit)* Let the auth type name the connect session, not the end user (#7348)
+- Npm audit fix (#7349)
+- *(dockerfile)* Fix vulns in image (#7351)
+- *(syncs)* Batch schedule search fan-out (#7318)
+
+## [v0.71.6] - 2026-09-02
+
+### Added
+
+- *(plans)* Add the pay-as-you-go plan (#7279)
+- *(plans)* Add upgrade path from free to PAYG (#7281)
+- *(metering)* Add daily function executions v2 backfill (#7188)
+- *(usage)* Read all function metrics from v2 table (#7203)
+- *(server)* Connection deleted webhook (#7235)
+- *(server)* Add the nango_execute meta tool (NAN-6601) (#7261)
+- *(server)* Add the nango_tool_search meta tool (NAN-6603) (#7262)
+- *(webapp)* Show the new pricing's plans (#7306)
+- *(audit)* Record the policy scope on every event (NAN-6802) (#7310)
+- *(plans)* Block moves between Starter and Growth (#7320)
+- *(plans)* Cap free function runtime instead of legacy metrics (#7315)
+- *(webapp)* Rework the billing overrides dev panel (#7314)
+- *(audit)* Name api keys and environments by their uuid (#7319)
+- *(integrations)* Add support for scrollstash-mcp (#7282)
+- *(providers)* Add sandbox env to factorial (#7228)
+- *(integrations)* Add support for meta-ads-mcp (#7321)
+- *(integrations)* Add support for finta (#7275)
+- *(integrations)* Add support for greenfield-meditech (#7326)
+- *(audit)* Attribute public-key OAuth callbacks (#7329)
+- *(audit)* Count events that could not name an actor (#7322)
+- *(integrations)* Add support for epic fhir (#7332)
+- *(server)* Add action trigger management MCP tool (#7284)
+- *(integrations)* Add support for nooks (#7337)
+- *(mcp)* Add sync trigger management tool (#7257)
+- *(cli)* Support mtls (#7325)
+- *(server)* Track usage of deprecated public endpoints (#7280)
+
+### Changed
+
+- Update version in manifest
+- *(server)* Use grants and scopes instead of permissions in private API (#7293)
+- *(kms)* Rename file (#7307)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/7c51ba656fd0c2690d96bea0af938b2659cece09 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/02b840bafa26f2af89953c21c376eb6c5ed460ea by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/4f107b1670183cf485017912952decd0a2218186 by Victor Lang'at
+
+### Fixed
+
+- *(integrations)* Support regional SaaS Backup hosts for NinjaOne (#7300)
+- *(connections)* Include shared credentials when selecting connections for cron refresh (#7312)
+- *(docs)* Point nango.dev/demo links at /contact (#7305)
+- *(runner)* Auth runner start (#7288)
+- *(webapp)* Show usage on the 1st of the month (#7323)
+- *(auth)* Raise API key credential max length to 4096 (#7327)
+- Name the Growth add-on in upgrade prompts (#7316)
+- *(api)* Use UUIDs for public environment management  (#7309)
+- *(webapp)* Align usage bars across metric rows (#7331)
+
 ## Managed 1.6.7 (0.71.5)
 
 ## Managed Nango 1.6.7 (application 0.71.5)
