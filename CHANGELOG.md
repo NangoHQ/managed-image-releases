@@ -1,5 +1,47 @@
 # Managed image releases
 
+## Managed 1.6.9 (0.71.6)
+
+## Managed Nango 1.6.9 (application 0.71.6)
+
+- **Released:** 2026-09-03
+- **Docker image:** `nangohq/nango:managed-1.6.9-0.71.6-42653e8800379afc30aad86e414ccb569b8697c1`
+- **Pin CLI to:** `0.71.6`
+- **Compare:** https://github.com/NangoHQ/nango/compare/b0ce6392ab8ed84e08902b25e21675946a0939ea...42653e8800379afc30aad86e414ccb569b8697c1
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(server)* Tag internal callers instead of excluding them from deprecated endpoint metric (#7353)
+- *(audit)* Day-partitioned Postgres schema for the self-hosted audit trail (#7335)
+- *(audit)* Daily partition lifecycle for the self-hosted audit table (#7343)
+- Add deploy all workflow (#7380)
+- *(audit)* Show how many events a read matches (#7365)
+- *(agent-sessions)* Add DELETE /sessions/{id} to terminate a session (NAN-6598) (#7336)
+
+### Changed
+
+- Update version in manifest
+- Draft the agent sessions guide (NAN-6832) (#7317)
+- Match the website favicon (#7367)
+- Audit trail (NAN-6487) (#7164)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/1efbe17acea944b505ac50b3453862788b5c4b5b by Marcin Dobrowolski
+- Retire the permission vocabulary for scopes (#7341)
+
+### Fixed
+
+- *(webapp)* Adapt favicons to the browser theme (#7366)
+- *(billing)* Read Orb subtotal for metric charges (#7371)
+- *(vulns)* Npm audit fix (#7376)
+- *(docker)* Remove npm from docker images (#7381)
+- *(docker)* Cleanup lambda npm (#7382)
+- *(server)* Validate google incoming webhooks (#7373)
+- *(persist)* Stream deleteHardAllRecords progress to avoid client timeout on large deletes (#7375)
+
 ## Managed 1.6.8 (0.71.6)
 
 ## Managed Nango 1.6.8 (application 0.71.6)
