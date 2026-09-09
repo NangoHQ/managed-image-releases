@@ -1,5 +1,34 @@
 # Managed image releases
 
+## Managed 1.6.11 (0.71.6)
+
+## Managed Nango 1.6.11 (application 0.71.6)
+
+- **Released:** 2026-09-09
+- **Docker image:** `nangohq/nango:managed-1.6.11-0.71.6-3f636c8052ff5a4c672c4c96e6f5996ca89a9088`
+- **Pin CLI to:** `0.71.6`
+- **Compare:** https://github.com/NangoHQ/nango/compare/c043f09997fc6943ea5cca715cc502e6e6ce9bf4...3f636c8052ff5a4c672c4c96e6f5996ca89a9088
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(docs)* Add log retention to docs (#7435)
+- *(integrations)* Add support for Moneybird (#7433)
+- *(integrations)* Add bol.com OAuth2 client-credentials provider (#7436)
+
+### Changed
+
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/59fd4bfe9087379986552ee73b41209ea298d65e by Victor Lang'at
+- Update version in manifest
+
+### Fixed
+
+- *(server)* Return 500 when secret key auth hits an unexpected error (NAN-4668) (#7456)
+
 ## Managed 1.6.10 (0.71.6)
 
 ## Managed Nango 1.6.10 (application 0.71.6)
