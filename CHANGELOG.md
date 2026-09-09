@@ -1,5 +1,81 @@
 # Managed image releases
 
+## Managed 1.6.10 (0.71.6)
+
+## Managed Nango 1.6.10 (application 0.71.6)
+
+- **Released:** 2026-09-09
+- **Docker image:** `nangohq/nango:managed-1.6.10-0.71.6-c043f09997fc6943ea5cca715cc502e6e6ce9bf4`
+- **Pin CLI to:** `0.71.6`
+- **Compare:** https://github.com/NangoHQ/nango/compare/42653e8800379afc30aad86e414ccb569b8697c1...c043f09997fc6943ea5cca715cc502e6e6ce9bf4
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(webhooks)* Back off throttled groups on jobs SQS consumer (NAN-6407) (#7328)
+- *(webhooks)* Defer saturated dispatch messages in SQS (NAN-6406) (#7334)
+- *(orch)* Add executeFunctionBatch (#7374)
+- *(audit)* Postgres writer and reader for the self-hosted audit trail (#7346)
+- *(plans)* Add the growth add-on for pay-as-you-go (#7301)
+- *(audit)* Run the Postgres migration and partition daemon from the server (#7355)
+- *(webapp)* Rework the audit trail filter UI (#7397)
+- Add screenshot to the agent sessions changelog entry (#7411)
+- *(providers)* Add outlook webhook support (#7389)
+- *(webapp)* Let customers add and remove the Growth add-on (#7402)
+- *(syncs)* Paginate and virtualize the connection Syncs tab (NAN-6819) (#7369)
+- *(integrations)* Add support for netsapiens (#7361)
+- *(webapp)* Show the Pay-as-you-go migration in-app (#7425)
+- *(integrations)* Add eu base url to typeform (#7407)
+- *(webapp)* Show spend and per-metric charges to all customers (#7364)
+- Add support for webhook functions (#7384)
+- Allow setting function http trigger subscriptions (#7428)
+- *(webhooks)* Add webhook support for granola (#7357)
+- *(webhooks)* Add gong webhooks (#7434)
+- *(integrations)* Add LiveSwitch provider (#7158)
+- *(agent-session)* Create proxy tool (#7414)
+- *(webhooks)* Improve fathom webhooks to use query as the connection id value (#7410)
+- *(integrations)* Add support for outline (#7440)
+- *(webapp)* Polish the audit event drawer and export dialog (#7417)
+- *(integrations)* Add support for amplemarket (#7442)
+- *(integrations)* Add support for airtable mcp (#7450)
+
+### Changed
+
+- Update version in manifest
+- Document agent session termination (#7391)
+- *(mcp)* Upgrade TypeScript SDK to v2 (#7383)
+- Update AGENTS.md (#7406)
+- Changelog for audit trail, agent sessions beta, new pricing, and August roundup (#7409)
+- Update for new pricing plans (#7390)
+- *(billing)* Remove the s26-pricing flag (#7426)
+- *(audit)* Retire the audit-trail rollout flag (#7429)
+- *(proxy)* Remove the proxy-forward-all-response-headers flag (NAN-6922) (#7431)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/56c9369bd7c6878a7fce4fb05f7825a8a31a6d76 by Marcin Dobrowolski
+- *(mfa)* Retire the mfa rollout flag (NAN-6921) (#7432)
+- *(billing)* Retire the HTTP billing events sent to Orb (NAN-6503) (#7427)
+- Restructure the security guide (#7437)
+
+### Fixed
+
+- *(design-system)* Attach tooltip arrow to chip (#7395)
+- *(connect)* Allow previews at the connection cap (#7379)
+- *(cli)* Stop compile test hanging on npm audit (#7396)
+- *(providers)* Disable PKCE for Digits OAuth2 (#7399)
+- *(webhooks)* Dedupe Attio record events (#7386)
+- *(syncs)* Render rows in production builds (NAN-6914) (#7418)
+- *(orchestrator)* Drain the processor queue after the loop exits (NAN-6896) (#7403)
+- *(jobs)* Decouple the consumer and server shutdowns (NAN-6896) (#7404)
+- *(server)* Block unverified gmail webhooks with env setting (#7424)
+- *(server)* Prevent disabled MCP action execution (#7439)
+- *(connect-ui)* Keep base-path recovery out of the CDN build (#7401)
+- *(server)* Clamp proxy retry to maximum duration (#7264)
+- *(webapp)* Keep dev tools while impersonating customers (#7444)
+- *(webhooks)* Enforce signature validation in webhook routing scripts (#7430)
+
 ## Managed 1.6.9 (0.71.6)
 
 ## Managed Nango 1.6.9 (application 0.71.6)
