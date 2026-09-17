@@ -1,5 +1,75 @@
 # Managed image releases
 
+## Managed 1.6.12 (0.71.7)
+
+## Managed Nango 1.6.12 (application 0.71.7)
+
+- **Released:** 2026-09-17
+- **Docker image:** `nangohq/nango:managed-1.6.12-0.71.7-bc65eb8aec98cd184c0da0701eed7bae4ab6830f`
+- **Pin CLI to:** `0.71.7`
+- **Compare:** https://github.com/NangoHQ/nango/compare/3f636c8052ff5a4c672c4c96e6f5996ca89a9088...bc65eb8aec98cd184c0da0701eed7bae4ab6830f
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(logs)* Stamp the session actor on action runs (NAN-6949) (#7443)
+- *(logs)* Add an agent session filter to the logs page (NAN-6606) (#7446)
+- *(integrations)* Add support for highq (#7487)
+- *(integrations)* Add support for pandadoc eu and mcp (#7500)
+- *(integrations)* Add support for infor (#7513)
+- *(integrations)* Add support for microsoft-dataverse (#7505)
+- *(integrations)* Add support for scavio (#7165)
+- Add OAuth authorization server package (#7463)
+- *(mcp)* Support static server URL and configurable scopes for MCP_OAUTH2_GENERIC (#7465)
+- *(shared)* Add support for GCP and Azure buckets (#7519)
+
+### Changed
+
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/bb789a55bfcf744b3c83aa9132e4ffa562106aa3 by arctic-char
+
+## [v0.71.7] - 2026-09-11
+
+### Added
+
+- *(billing)* Show per-metric charges for past months on the billing page (#7457)
+- *(server)* Return a specific error for oversized request bodies (#7368)
+- *(api)* Add public environment list endpoint (#7342)
+- *(api)* List environment API keys (#7350)
+- *(api)* Get environment API keys by UUID (#7352)
+- *(integrations)* Add Bandwidth OAuth2 client-credentials provider (#7359)
+- *(integrations)* Add support for inteliquent (#7360)
+- *(webapp)* Show existing customers what they'd pay on the new pricing (#7458)
+- *(github)* Add deployment for byoc-gcp-1 (#7461)
+- *(orch)* Add support for scheduled functions (#7460)
+- *(cli)* Add --no-sourcemap flag to disable inline source maps (#7506)
+
+### Changed
+
+- Update version in manifest
+- Link self-hosting audit trail setup from changelog (#7471)
+- *(agent-sessions)* Tone down beta messaging (#7475)
+
+### Fixed
+
+- *(proxy)* Stop getRawBody from crashing on stream request bodies (#7441)
+- *(webapp)* Stop showing usage months from before the account existed (#7438)
+- *(billing)* Show discounted metrics as billed (#7468)
+- *(proxy)* Don't crash on a bare '%' in the request body for providers that don't need canonical params (#7469)
+- *(webapp)* Hide the current-plan column when it has no charges (#7483)
+- *(provider)* Allow hyphen in pipelinecrm api key (#7489)
+- *(billing)* Stop accounts from self-serve upgrading to a retired plan (#7451)
+- *(ci)* Stop Ubuntu mirror outages from failing the connect-ui tests (#7504)
+- *(providers)* Fix supabase regex key (#7491)
+- *(runner)* Allow node:-prefixed core module specifiers in sandboxed scripts (#7488)
+- *(server)* Surface a clear 400 for unsupported multipart Content-Type on /proxy (#7498)
+- *(webapp)* Stop the usage table cutting off figures and wrapping headers (#7499)
+- Vulnerability fixes (#7486)
+- *(wrap-dek)* Changes to support gcp kms (#7445)
+
 ## Managed 1.6.11 (0.71.6)
 
 ## Managed Nango 1.6.11 (application 0.71.6)
