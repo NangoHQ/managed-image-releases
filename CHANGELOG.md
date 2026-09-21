@@ -1,5 +1,106 @@
 # Managed image releases
 
+## Managed 1.6.13 (0.71.9)
+
+## Managed Nango 1.6.13 (application 0.71.9)
+
+- **Released:** 2026-09-21
+- **Docker image:** `nangohq/nango:managed-1.6.13-0.71.9-0a2c37c5300b27f8882624921a7365720758e26e`
+- **Pin CLI to:** `0.71.9`
+- **Compare:** https://github.com/NangoHQ/nango/compare/bc65eb8aec98cd184c0da0701eed7bae4ab6830f...0a2c37c5300b27f8882624921a7365720758e26e
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(auth)* Return to the requested page after login (#7520)
+- *(integrations)* Add Linkly (API key) (#7516)
+- Extend one-off PAYG migration script (#7553)
+- *(oauth)* Add dashboard login and consent flow (NAN-6924) (#7481)
+- *(tracking)* Track plan_change:v2 (#7558)
+- Scheduled functions can execute (#7563)
+- *(integrations)* Add Autumn (API key) (#7576)
+- *(providers)* Move stripe-app-sandbox appDomain to integration_config (#7227)
+- *(integrations)* Add support for hex mcp (#7578)
+
+### Changed
+
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/f78affc941f935241a71eb6911209cbb92f3ec20 by Hassan_Wari
+- *(providers)* Update the Pleo logo to their new brand (#7565)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/261c9cb19d13c9bf1d664e66c3870e98477fd9ab by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/47dd7fd51835f9e9fcf7038573b67f5563d27856 by Victor Lang'at
+- Clarify external contribution guidelines (#7577)
+- *(records)* Share one helper for composite model names (#7415)
+
+### Fixed
+
+- *(integrations)* Send netsapiens token request as JSON (#7559)
+- *(providers)* Fix pleo api key verification endpoint (#7564)
+- *(cron)* Allow growth cron to pre-enable growth flag (#7555)
+- *(persist)* Restore per-tick limit on auto-deleting records (#7571)
+- *(connect-ui)* Stop the theme flashing before the dialog loads (#7497)
+- *(webapp)* Land billing deep links on the right section (#7567)
+
+## [v0.71.9] - 2026-09-16
+
+### Added
+
+- *(agent-sessions)* Give MCP tool failures an agent-facing message and code (NAN-6604) (#7473)
+- *(integrations)* Add support for pleo-api-key (#7534)
+
+### Changed
+
+- *(shared)* Coalesce customer key lookups (#7466)
+
+### Fixed
+
+- *(shared)* Propagate environment lookup failures (#7472)
+- *(frontend)* Route TWO_STEP credentials before OAuth2 client creden… (#7556)
+
+## [v0.71.8] - 2026-09-16
+
+### Added
+
+- *(agent-sessions)* Reap expired sessions and their tokens (NAN-6599) (#7511)
+- *(integrations)* Add SalesCaptain (#7149)
+- *(audit)* Audit agent session creation and termination (NAN-6751) (#7508)
+- *(agent-sessions)* Log a tool search operation (NAN-6605) (#7509)
+- *(functions)* Support deployment of function with schedule trigger (#7512)
+- *(jobs)* Emit function execution health metric at the source (NAN-6988) (#7527)
+- Add one-off Orb pay-as-you-go migration scheduler (#7494)
+- *(plans)* Growth add-on management cron (#7530)
+- *(integrations)* Add Neon MCP support (#7545)
+- *(usage)* Cap free-plan data transfer (#7413)
+- *(functions)* Upsert schedules if needed when deploying functions (#7525)
+- *(webhooks)* Add support for zoom webhooks (#7484)
+
+### Changed
+
+- *(agent)* Trim the agent session operation payloads (NAN-6950) (#7510)
+- *(google)* Document webhook auth as required (NAN-7030) (#7524)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/e4563fe2082cd44fc82df0857d3179bcaa3c2f32 by murphy-con
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/64a671aa2b83f449b3f29e94822bb62761902b51 by murphy-con
+- *(skills)* Document migration mismatch and local feature flags (#7496)
+- *(functions)* Rename DeployedNangoFunction to ListedNangoFunction (#7531)
+
+### Fixed
+
+- *(runner)* Log when reporting a task result fails (#7523)
+- *(syncs)* Keep the variant badge beside the sync name (#7423)
+- *(webhooks)* Enforce signature validation on GitHub App webhooks (NAN-6934) (#7462)
+- *(billing)* Show the cent Orb rounds up on per-metric charges (#7495)
+- *(billing)* Stop dropping charges when prices change mid-month (#7470)
+- *(utils)* Flush buffered metrics before services exit (#7538)
+- *(plans)* Normalize pg bigint limits as number (#7448)
+- *(integrations)* Switch lovable mcp client registration (#7546)
+- *(jobs)* Record interrupted sync segments in the health metric (#7549)
+- Fix ms dataverse sidebartitle (#7551)
+- *(deploy)* Reject nango.yaml deploys and remove dead legacy compile code (#7480)
+
 ## Managed 1.6.12 (0.71.7)
 
 ## Managed Nango 1.6.12 (application 0.71.7)
