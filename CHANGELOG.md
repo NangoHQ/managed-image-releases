@@ -1,5 +1,99 @@
 # Managed image releases
 
+## Managed 1.6.14 (0.71.10)
+
+## Managed Nango 1.6.14 (application 0.71.10)
+
+- **Released:** 2026-09-25
+- **Docker image:** `nangohq/nango:managed-1.6.14-0.71.10-f0ccb50a4dc666229fbb9b91bbe9c08a8ebc57c6`
+- **Pin CLI to:** `0.71.10`
+- **Compare:** https://github.com/NangoHQ/nango/compare/0a2c37c5300b27f8882624921a7365720758e26e...f0ccb50a4dc666229fbb9b91bbe9c08a8ebc57c6
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- Create/delete schedules if needed when connection is created/deleted (#7584)
+- Delete functions/schedules when integrations are deleted (#7589)
+- *(mcp)* Hook up OAuth to Management MCP (#7550)
+- *(server)* Ask for environment before OAuth MCP queries (#7601)
+- *(providers)* Add Anarlog MCP provider (#7303)
+- *(integrations)* Support MCP_OAUTH2 across create/update/get for static, dynamic, and cimd (#7464)
+- *(webapp)* Redirect from sign in/up pages when user already authenticated (#7580)
+- *(agent-sessions)* Add the nango_create_connection meta tool (#7592)
+- *(mfa)* Allow a recovery code to disable 2FA (NAN-7154) (#7597)
+- *(integrations)* Add support for Simpplr (#7548)
+- *(oauth2_cc)* Fall back to JWT exp for OAUTH2_CC token expiry (#7605)
+- Delete functions as part of the retention deletion logic (#7602)
+- *(mcp)* Add missing hints to Management MCP tools (#7608)
+- Add NANGO_ADMIN_KEY to env example (#7619)
+- *(integrations)* Add pleo api key to the api key regex (#7623)
+- *(halo-psa)* Add authenticated webhook routing (#7615)
+- *(authz)* Authorize public routes through grants (#7490)
+- *(integrations)* Add support for mailerlite (#7618)
+- *(webhooks)* Flag unverified webhooks in forwarded payloads (NAN-7212) (#7627)
+- *(posthog)* Tag events with account, environment and is-prod (NAN-7113) (#7572)
+- *(integrations)* Add support for clay mcp (#7617)
+- *(posthog)* Emit agent session lifecycle and tool call events (NAN-7114) (#7574)
+- *(integrations)* Add support for textus (#7620)
+- *(integrations)* Add support for beeline-vms (#7622)
+- *(integrations)* Add support for symplr-ctm (#7625)
+- *(integrations)* Add support for ukg-pro-wfm-cc (#7636)
+- *(integrations)* Add support for eway-crm (#7637)
+- *(integrations)* Add support for jobnimbus (#7638)
+- *(integrations)* Add support for posthog capture (#7645)
+- *(server)* Add MCP titles and type action input (#7640)
+- *(integrations)* Add MCP_OAUTH2_GENERIC integrations to the public API (#7529)
+- *(CLI)* Accept on-events trigger for functions (#7634)
+- *(webhooks)* Require a Nango webhook secret for unsigned providers (NAN-7213) (#7629)
+- *(catalog)* Add live catalog reader and runnable resolver (NAN-6903) (#7611)
+- *(posthog)* Send tool search queries and results (NAN-6944) (#7585)
+
+### Changed
+
+- Update version in manifest
+- September changelog entries and tighter dividers (#7591)
+- Make the docs favicon the same size as everyone else's (#7599)
+- Remove E2B sandbox provider (#7600)
+- Recommend OAuth for Management MCP (#7603)
+- Retire old daily_function_executions CH table (#7595)
+- Remove daily-fn-exec one-off data migration script (#7596)
+- Loosen the changelog divider gap to 48px (#7609)
+- *(posthog)* Remove the legacy backend events (NAN-7125) (#7573)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/809982d12aad67a359ac6e75a1adb59ad292dfde by Givi
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/957b65ee32ecbfe1d0761228986633825654b372 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/6ef2e92eb45d3cec792ee7d8d2eda97618b3bed7 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/3e8305e2383842cfc95ca2390e9859686911f790 by Victor Lang'at
+- *(authz)* Replace withScope with can (#7492)
+- *(github-app)* Explain how to add the webhook secret to an existing app (NAN-7210) (#7647)
+
+### Fixed
+
+- *(retry)* Retry EPIPE as a network error (#7606)
+- *(auth)* Stop a link cancelling onboarding for Google signups (#7579)
+- *(oauth-server)* Support ChatGPT CIMD metadata choices (#7607)
+- *(connectwise-psa)* Support self-hosted webhook signing-key origins (#7616)
+- *(webapp)* Sign users out when their session expires on any page (#7552)
+- *(webapp)* Make Getting Started code snippet readable in light mode (#7621)
+- *(webapp)* Remove SWR from the webapp (#7635)
+- *(cron)* Allow startup-deal growth add-on transitions (#7648)
+- Support OpenAI plugin OAuth submission (#7633)
+- *(server)* Delete variant sync records on cleanup, not base (#7649)
+
+## [v0.71.10] - 2026-09-21
+
+### Added
+
+- *(function)* Implement getVariant() (#7569)
+- *(integrations)* Add support for apple calendar (#7535)
+
+### Changed
+
+- Make BYOC the main self-hosting path (#7453)
+
 ## Managed 1.6.13 (0.71.9)
 
 ## Managed Nango 1.6.13 (application 0.71.9)
