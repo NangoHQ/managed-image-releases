@@ -1,5 +1,63 @@
 # Managed image releases
 
+## Managed 1.6.15 (0.71.10)
+
+## Managed Nango 1.6.15 (application 0.71.10)
+
+- **Released:** 2026-09-29
+- **Docker image:** `nangohq/nango:managed-1.6.15-0.71.10-8d4951b5e9583c0b84751559fb12b3fb0adeee55`
+- **Pin CLI to:** `0.71.10`
+- **Compare:** https://github.com/NangoHQ/nango/compare/f0ccb50a4dc666229fbb9b91bbe9c08a8ebc57c6...8d4951b5e9583c0b84751559fb12b3fb0adeee55
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(functions)* List live catalog actions (NAN-6903) (#7612)
+- *(webhooks)* Verify salesforce webhooks with a Nango webhook secret (NAN-7214) (#7630)
+- *(posthog)* Show the account in Billing Bot plan-change alerts again (#7651)
+- *(integrations)* Add support for Tracify (#7507)
+- *(integrations)* Add support for Omnisend (#7515)
+- *(functions)* Run live catalog actions (NAN-6903) (#7613)
+- Add partial index to functions config for http trigger with subscriptions (#7656)
+- *(integrations)* Add Billit Access Point (#7659)
+- Add function uuid (#7662)
+- *(logs)* Add support for Elastic Cloud Serverless (#7673)
+- Add /functions/:uuid (#7674)
+- *(webhooks)* Validate Bot Framework JWTs on Microsoft Teams webhooks (NAN-6938) (#7661)
+- Add GET /functions API endpoint (#7679)
+- *(server)* Track Management MCP usage in PostHog (#7653)
+- *(webapp)* List catalog actions in the playground (#7682)
+- *(integrations)* Add support for astro-mcp (#7695)
+- *(integrations)* Add support for eclinicalworks (#7694)
+
+### Changed
+
+- Changelog entry for Management MCP OAuth and new tools (#7658)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/fd0a116d2872bd8f8e9f2301f4855d72d949bb1d by Victor Lang'at
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/98217a8f0256c58480fa197d95d51f7c12d4b340 by Rhys Balevicius
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/46dc5e6f2359e5bc42c1118c7e60b9c70f41a3ff by Rhys Balevicius
+- Box the Management MCP OAuth screenshot (#7665)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/1f51ebe9c3648515a3726a8195d12e1a2e280a41 by arctic-char
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/9d2a2311e455b2c3b35c916adeddfedeb44e0ed3 by arctic-char
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/83a1a4955f7466e89cae8cc2b0ba768485d91319 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/e52b81d237dcbd00e103da6050d5f5d140b8841b by Victor Lang'at
+- Migrate webflow docs (#7686)
+
+### Fixed
+
+- *(deploy)* Return a clean error when the previous sync version can't be auto-incremented (#7657)
+- *(webapp)* Stop sending autocapture events to PostHog (#7655)
+- *(webapp)* Solve issue with inaccessible Upgrade link in tooltips (#7467)
+- *(posthog)* Stop merging every CLI device on an account into one PostHog person (#7654)
+- *(docs)* Update self-hosting docs (#7689)
+- *(plans)* Give Growth add-on customers the environments the add-on promises (#7690)
+- *(shared)* Get api url (#7704)
+
 ## Managed 1.6.14 (0.71.10)
 
 ## Managed Nango 1.6.14 (application 0.71.10)
