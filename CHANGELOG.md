@@ -1,5 +1,28 @@
 # Managed image releases
 
+## Managed 1.6.16 (0.71.10)
+
+## Managed Nango 1.6.16 (application 0.71.10)
+
+- **Released:** 2026-09-29
+- **Docker image:** `nangohq/nango:managed-1.6.16-0.71.10-82c35f702fe1d4c92834b6b4627f8ac86e5f8e55`
+- **Pin CLI to:** `0.71.10`
+- **Compare:** https://github.com/NangoHQ/nango/compare/8d4951b5e9583c0b84751559fb12b3fb0adeee55...82c35f702fe1d4c92834b6b4627f8ac86e5f8e55
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(webapp)* Rotate the webhook signing key from the dashboard (NAN-6608) (#7680)
+
+### Changed
+
+- Update version in manifest
+- *(all)* Bump zod versions (#7700)
+
 ## Managed 1.6.15 (0.71.10)
 
 ## Managed Nango 1.6.15 (application 0.71.10)
