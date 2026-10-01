@@ -1,5 +1,35 @@
 # Managed image releases
 
+## Managed 1.6.18 (0.71.11)
+
+## Managed Nango 1.6.18 (application 0.71.11)
+
+- **Released:** 2026-10-01
+- **Docker image:** `nangohq/nango:managed-1.6.18-0.71.11-fe85242b81ab9d3ac808a72ca7bdd2788c8e86fb`
+- **Pin CLI to:** `0.71.11`
+- **Compare:** https://github.com/NangoHQ/nango/compare/03ac7879367e3c722db3283475ad3499c506fbb4...fe85242b81ab9d3ac808a72ca7bdd2788c8e86fb
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(sanity-sync)* Add integration templates sync (#7554)
+
+### Changed
+
+- Update version in manifest
+- *(webapp)* Rename the remaining webapp events to the taxonomy (#7720)
+
+### Fixed
+
+- *(server)* Fix the dark OAuth success page in light mode (#7742)
+- Upgrade @grpc/grpc-js (#7747)
+- *(plans)* Give Growth add-on customers the xl API rate limit (#7691)
+- *(file)* Copy templates remotely whenever remote storage is on (#7752)
+
 ## Managed 1.6.17 (0.71.11)
 
 ## Managed Nango 1.6.17 (application 0.71.11)
