@@ -1,5 +1,66 @@
 # Managed image releases
 
+## Managed 1.6.17 (0.71.11)
+
+## Managed Nango 1.6.17 (application 0.71.11)
+
+- **Released:** 2026-10-01
+- **Docker image:** `nangohq/nango:managed-1.6.17-0.71.11-03ac7879367e3c722db3283475ad3499c506fbb4`
+- **Pin CLI to:** `0.71.11`
+- **Compare:** https://github.com/NangoHQ/nango/compare/82c35f702fe1d4c92834b6b4627f8ac86e5f8e55...03ac7879367e3c722db3283475ad3499c506fbb4
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(webapp)* Show startup-deal accounts the new billing metrics (#7566)
+- *(kms)* Add Azure Key Vault as a DEK wrapping provider (#7717)
+
+### Changed
+
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/e1f139a2b33d2e976c811c95a38c2dd2a413fe47 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/6d0f6e4e575cdf9f2f89e16086d2e2069fefbb1c by Victor Lang'at
+
+### Fixed
+
+- Allow cronjob to enable growth add-on for scale-legacy (#7731)
+
+## [v0.71.11] - 2026-09-30
+
+### Added
+
+- *(posthog)* Count server-side events in account-level PostHog insights (#7687)
+- *(integrations)* Add support for HitPay (#7684)
+- Add PATCH /functions/:uuid to enable/disable (#7703)
+- *(flags)* Gate catalog tools on the tools-catalog flag (#7699)
+- *(integrations)* Add support for weflow (#7711)
+- *(webhooks)* Verify airtable webhook MAC signatures (NAN-7215) (#7628)
+- *(integrations)* Add support for openrouter (#7710)
+
+### Changed
+
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/1f08afc49a27b9f22f80ae31f2b2679f0e1bda99 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/d70f170c0b429fb03681fc4dc63972cb783fa44b by Victor Lang'at
+- Replace blue favicon with the website/app wolf favicon (light & dark mode) (#7714)
+- Point get connection and node sdk links to current paths (#7718)
+- *(webapp)* Remove webapp analytics events nobody uses (#7663)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/0a5ff5d9daf7e481dc14e5b8109e823c43430c86 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/ce75a75c9a8ffdbf9a6f6a484cf05fdf410e5f28 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/4866befe2e85d879f0ce0cad12a7ee12fa73727d by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/b8b5922290472952609ea17f505624b760b0ddc6 by Victor Lang'at
+
+### Fixed
+
+- *(webapp)* Move remaining hand-rolled fetches onto react-query (part 1) (#7652)
+- *(integrations)* Disable PKCE for eway-crm (#7723)
+- Vulns (#7725)
+- *(agent-sessions)* Tell nango_tool_search what to do about a missing connection (NAN-7174) (#7705)
+- More vulns (#7729)
+
 ## Managed 1.6.16 (0.71.10)
 
 ## Managed Nango 1.6.16 (application 0.71.10)
