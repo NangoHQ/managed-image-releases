@@ -1,5 +1,59 @@
 # Managed image releases
 
+## Managed 1.6.19 (0.71.12)
+
+## Managed Nango 1.6.19 (application 0.71.12)
+
+- **Released:** 2026-10-02
+- **Docker image:** `nangohq/nango:managed-1.6.19-0.71.12-153f8c5450e7dd7049504df4a323e25499369002`
+- **Pin CLI to:** `0.71.12`
+- **Compare:** https://github.com/NangoHQ/nango/compare/fe85242b81ab9d3ac808a72ca7bdd2788c8e86fb...153f8c5450e7dd7049504df4a323e25499369002
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Fixed
+
+- *(linear-mcp)* Omit empty client_secret from token/refresh requests (#7769)
+- *(orchestrator)* Revert "fix: dequeue query tweaks (#7743)" (#7772)
+
+## [v0.71.12] - 2026-10-02
+
+### Added
+
+- *(webhooks)* Add allow unverified webhooks integration option (NAN-7312) (#7726)
+- *(integrations)* Add support for Discord Bot (#7678)
+- *(integrations)* Add support for Slack app configuration tokens (#7669)
+- *(server)* Add the Agent Playground chat API (#7697)
+- *(integrations)* Add support for modmed-fhir (#7745)
+- *(integrations)* Add Discogs OAuth1 and personal token providers (#7340)
+- *(integrations)* Add support for Mailtrap (#7150)
+- *(runner-sdk)* Support redirect error in nango.uncontrolledfetch (#7758)
+
+### Changed
+
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/73b6621f698206dbb7561601f031ab3af02c10e5 by Victor Lang'at
+- Update version in manifest
+- *(docs)* Free self-hosted should be single tenant (#7751)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/900eb400acae4023ff10903315905207bc3a5dc7 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/fec2851c5d727f250db62f8b275603cd65c96996 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/3fce1c855f03b768a4a256cb6bac745b8296c3b6 by Victor Lang'at
+- Function invocation endpoint (#7724)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/5e38e8f0dfa1ea031ee2230f8d8d3204514667d4 by Victor Lang'at
+- Rename the server and CLI events to the taxonomy (#7753)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/23df553a789b6e30ba1640d4605cf5bfa7ca7cae by Victor Lang'at
+
+### Fixed
+
+- *(server)* Fix tool search reporting a just-connected app as not connected (#7748)
+- *(proxy)* Time out stalled requests and abort them on cancel (#7709)
+- Dequeue query tweaks (#7743)
+- *(microsoft-admin)* Stop double-encoding the client_credentials scope (#7712)
+- *(mcp)* Protect credentials and confirm destructive actions (#7750)
+- *(posthog)* Fix duplicate persons and internal filters in PostHog (#7716)
+
 ## Managed 1.6.19 (0.71.11)
 
 ## Managed Nango 1.6.19 (application 0.71.11)
