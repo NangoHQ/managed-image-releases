@@ -1,5 +1,28 @@
 # Managed image releases
 
+## Managed 1.6.20 (0.71.12)
+
+## Managed Nango 1.6.20 (application 0.71.12)
+
+- **Released:** 2026-10-05
+- **Docker image:** `nangohq/nango:managed-1.6.20-0.71.12-d316fc8b070a0684f20bad00200b54ea3a62da19`
+- **Pin CLI to:** `0.71.12`
+- **Compare:** https://github.com/NangoHQ/nango/compare/153f8c5450e7dd7049504df4a323e25499369002...d316fc8b070a0684f20bad00200b54ea3a62da19
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Changed
+
+- Update version in manifest
+
+### Fixed
+
+- *(release)* Fix managed manifest app version for 1.6.19 (#7775)
+- *(actions)* Opt out of logging action input (#7770)
+
 ## Managed 1.6.19 (0.71.12)
 
 ## Managed Nango 1.6.19 (application 0.71.12)
