@@ -1,5 +1,42 @@
 # Managed image releases
 
+## Managed 1.6.21 (0.71.12)
+
+## Managed Nango 1.6.21 (application 0.71.12)
+
+- **Released:** 2026-10-06
+- **Docker image:** `nangohq/nango:managed-1.6.21-0.71.12-4b84e717e79df5184d5cf2cddf7943511448860f`
+- **Pin CLI to:** `0.71.12`
+- **Compare:** https://github.com/NangoHQ/nango/compare/d316fc8b070a0684f20bad00200b54ea3a62da19...4b84e717e79df5184d5cf2cddf7943511448860f
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(webapp)* Build the Agent Playground chat page (#7732)
+- *(microsoft-teams)* Optionally mint Teams Dev Portal tokens (#7677)
+- *(integrations)* Add support for Pleo MCP (#7767)
+
+### Changed
+
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/b8e49829afbdc3b034f62d7e01d9701b8e541f57 by Victor Lang'at
+- *(webapp)* Upgrade posthog-js (#7798)
+- BYOC supports Azure (#7797)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/6cfdaf648692eca18eb25af2a890802fd132305f by arctic-char
+- BYOC runs on Azure too (#7800)
+
+### Fixed
+
+- Vulns (#7790)
+- *(server)* Fix Agent Playground search and connect gaps (#7766)
+- *(providers)* Widen atlassian-admin org id regex (#7799)
+- Vulns (#7803)
+- *(server)* Omit action input (#7804)
+
 ## Managed 1.6.20 (0.71.12)
 
 ## Managed Nango 1.6.20 (application 0.71.12)
