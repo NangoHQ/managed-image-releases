@@ -1,5 +1,31 @@
 # Managed image releases
 
+## Managed 1.6.22 (0.71.12)
+
+## Managed Nango 1.6.22 (application 0.71.12)
+
+- **Released:** 2026-10-06
+- **Docker image:** `nangohq/nango:managed-1.6.22-0.71.12-da762b6743257f84926387870f113c9d48ebf670`
+- **Pin CLI to:** `0.71.12`
+- **Compare:** https://github.com/NangoHQ/nango/compare/4b84e717e79df5184d5cf2cddf7943511448860f...da762b6743257f84926387870f113c9d48ebf670
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(webapp)* Keep the Agent Playground chat across page reloads (#7765)
+
+### Changed
+
+- Update version in manifest
+
+### Fixed
+
+- Control logging function output (#7810)
+
 ## Managed 1.6.21 (0.71.12)
 
 ## Managed Nango 1.6.21 (application 0.71.12)
