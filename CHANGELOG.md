@@ -1,5 +1,51 @@
 # Managed image releases
 
+## Managed 1.6.23 (0.71.12)
+
+## Managed Nango 1.6.23 (application 0.71.12)
+
+- **Released:** 2026-10-07
+- **Docker image:** `nangohq/nango:managed-1.6.23-0.71.12-7629d973859ada629d4a5003fc43e62e27c3611c`
+- **Pin CLI to:** `0.71.12`
+- **Compare:** https://github.com/NangoHQ/nango/compare/da762b6743257f84926387870f113c9d48ebf670...7629d973859ada629d4a5003fc43e62e27c3611c
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(webhooks)* Only show allow unverified webhooks where signatures are enforced (NAN-7346) (#7757)
+- *(integrations)* Add support for imanage (#7806)
+- *(integrations)* Add support for netdocuments (#7808)
+- Add Connection MCP migration guide (#7814)
+- Add API endpoint to create/delete/edit function variants (#7791)
+- *(internal-auth)* Unify token shape (#7676)
+- *(integrations)* Add support for breathehr (#7813)
+- *(integrations)* Add support for charliehr (#7815)
+- *(integrations)* Add support for monday api key (#7830)
+- *(utils)* Add new headers for redaction (#7836)
+- *(integrations)* Add support for checkbox.ai (#7825)
+
+### Changed
+
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/6283e595a7df390dee7e0acb0cdbd2ae7fef75d5 by Victor Lang'at
+- *(webapp)* Upgrade the webapp to zod 4 (#7809)
+- *(agent-sessions)* Warn that nango_proxy bypasses toolset allow/deny (#7821)
+- *(dev)* Stop local ClickHouse growing its system logs (#7827)
+- Use function uuid in task payload instead of name (#7756)
+- Changelog entries for late September and early October (#7839)
+
+### Fixed
+
+- *(server)* Fix 500s on unhandled Orb webhook events (#7812)
+- *(providers)* Rename Google Sheet to Google Sheets in the catalog (#7811)
+- Vulnerabilities (#7828)
+- *(webhooks)* Skip disabled syncs when dispatching webhooks (NAN-5774) (#7774)
+- *(integrations)* Loosen buildium regex pattern (#7832)
+
 ## Managed 1.6.22 (0.71.12)
 
 ## Managed Nango 1.6.22 (application 0.71.12)
