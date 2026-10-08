@@ -1,5 +1,28 @@
 # Managed image releases
 
+## Managed 1.6.24 (0.71.12)
+
+## Managed Nango 1.6.24 (application 0.71.12)
+
+- **Released:** 2026-10-08
+- **Docker image:** `nangohq/nango:managed-1.6.24-0.71.12-8a86a4820ff7ed4d34526a94ac6d86003eaff5fe`
+- **Pin CLI to:** `0.71.12`
+- **Compare:** https://github.com/NangoHQ/nango/compare/7629d973859ada629d4a5003fc43e62e27c3611c...8a86a4820ff7ed4d34526a94ac6d86003eaff5fe
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(providers)* Add Clarify (#7771)
+
+### Changed
+
+- Update version in manifest
+- Rename the webhook signing key changelog entry (#7840)
+
 ## Managed 1.6.23 (0.71.12)
 
 ## Managed Nango 1.6.23 (application 0.71.12)
