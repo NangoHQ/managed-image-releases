@@ -1,5 +1,44 @@
 # Managed image releases
 
+## Managed 1.6.25 (0.71.12)
+
+## Managed Nango 1.6.25 (application 0.71.12)
+
+- **Released:** 2026-10-09
+- **Docker image:** `nangohq/nango:managed-1.6.25-0.71.12-2d640b65492ee7738cd39fee3b5d7a332273ada3`
+- **Pin CLI to:** `0.71.12`
+- **Compare:** https://github.com/NangoHQ/nango/compare/8a86a4820ff7ed4d34526a94ac6d86003eaff5fe...2d640b65492ee7738cd39fee3b5d7a332273ada3
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(server)* Attribute server events to the logged-in user in PostHog (#7785)
+- *(mcp)* List every action in connections MCP tools (#7853)
+
+### Changed
+
+- Update version in manifest
+- Clarify dryrun sandbox token scopes (#7844)
+- *(api)* Mark connections search param as deprecated (#7749)
+- Document the webhook signing key rotation API (NAN-7494) (#7851)
+- *(agent-sessions)* Move session creation into agentSession.service (NAN-6869) (#7706)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/9782752c3989bbac1c5c37d0c07852471d9c161d by Victor Lang'at
+
+### Fixed
+
+- *(oauth2)* Interpolate connection_config in refresh/token params before refresh (#7807)
+- *(flows)* Scope flow disable to the caller's environment (#7715)
+- *(analytics)* Fix the signup event for Google and invite signups (#7788)
+- *(mcp)* Surface ActionError reason when payload has no error key (#7843)
+- *(webapp)* Fix the plan change dialog hanging on a webhook (#7819)
+- *(server)* Pass GraphQL error messages to the agent when an action fails (#7845)
+- Stale github action to process oldest PR first (#7862)
+- Upgrade node base image (#7863)
+
 ## Managed 1.6.24 (0.71.12)
 
 ## Managed Nango 1.6.24 (application 0.71.12)
