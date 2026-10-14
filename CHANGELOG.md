@@ -1,5 +1,67 @@
 # Managed image releases
 
+## Managed 1.6.26 (0.71.12)
+
+## Managed Nango 1.6.26 (application 0.71.12)
+
+- **Released:** 2026-10-14
+- **Docker image:** `nangohq/nango:managed-1.6.26-0.71.12-427d0744991ae03f7608036710c9feee6cdb05cd`
+- **Pin CLI to:** `0.71.12`
+- **Compare:** https://github.com/NangoHQ/nango/compare/2d640b65492ee7738cd39fee3b5d7a332273ada3...427d0744991ae03f7608036710c9feee6cdb05cd
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(integrations)* Add opt-in option to skip TLS cert verification (#7793)
+- *(webhooks)* Add support for intercom webhooks (#7838)
+- *(server)* Set up the Agent Playground's pre-made prompts and their integrations (#7805)
+- *(webapp)* Track dashboard page views with $pageview (#7820)
+- *(server)* Hide the overdue invoices banner for Enterprise plans (#7866)
+- *(integrations)* Add support for timocom (#7864)
+- *(integrations)* Add support for sentry mcp (#7865)
+- *(server)* Track Agent Playground model cost per account (#7868)
+- *(agent-sessions)* Send session context through MCP server instructions (NAN-7501) (#7871)
+- *(server)* Let the Agent Playground use the environment's own connections (#7849)
+- *(server)* Harden the Agent Playground agent against misuse (#7877)
+- Add tags column to function table (#7876)
+- *(functions)* Treat every action as enabled when tools-catalog is on (#7833)
+- *(webapp)* Function list redesign (#7734)
+- *(webapp)* Show function details in side panel (#7735)
+- *(integrations)* Add eu for lattice (#7882)
+- *(integrations)* Add sandbox environment support for Perk (#7883)
+- *(agent-sessions)* Discover remote MCP tools when a session is created (NAN-7426) (#7822)
+- *(agent-sessions)* Run remote MCP tools from agent sessions (NAN-7427) (#7823)
+- *(integrations)* Add freshservice-mcp and freshdesk-mcp templates (#7784)
+
+### Changed
+
+- Update version in manifest
+- *(skills)* Document PostHog setup for local stacks (#7826)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/581fb27397039a2beb931dc2c02179c21e7291c4 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/4e61bff484f0ab28810e3f252be8bff1f49928a9 by Taofeeq Oluderu
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/474eb90c257863cbff03cc929946cee3a5f36e6d by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/36eab417ae0e04013f0fab0ca2dfd032a05bef53 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/53cb24a11924d1d9c9a91aea452484986067b99c by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/43c1b6dda88311f549746c22e874ca2cc0673559 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/04ca5cf8d7946e9bba788d4a2c43da3afaffea99 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/25a51a308ad65bd435ad68effcc1aab37de55345 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/e55c6d314acc1a5120386bfe9cee2f14726422eb by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/52809239314d79fb2d74cac635f877f9c186bc6a by dillon-cordova
+- *(docs)* Update release cadence (#7885)
+- Updates with new catalog actions behaviors (#7859)
+- Clarify integration action guidance (#7870)
+- Describe catalog rows on FunctionAvailability (#7893)
+- Document MCP server tools in agent sessions (NAN-7428) (#7894)
+
+### Fixed
+
+- *(server)* Remove open redirect in GitHub App install/OAuth callback (#7485)
+- *(webapp)* Fix the dashboard sign-in redirect loop (#7886)
+
 ## Managed 1.6.25 (0.71.12)
 
 ## Managed Nango 1.6.25 (application 0.71.12)
