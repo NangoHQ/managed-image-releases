@@ -1,5 +1,54 @@
 # Managed image releases
 
+## Managed 1.6.27 (0.71.13)
+
+## Managed Nango 1.6.27 (application 0.71.13)
+
+- **Released:** 2026-10-14
+- **Docker image:** `nangohq/nango:managed-1.6.27-0.71.13-ad23e4f1f8eeee5509081f1179377e661aa78a10`
+- **Pin CLI to:** `0.71.13`
+- **Compare:** https://github.com/NangoHQ/nango/compare/427d0744991ae03f7608036710c9feee6cdb05cd...ad23e4f1f8eeee5509081f1179377e661aa78a10
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(integrations)* Add support for microsoft-defender-cc (#7898)
+- *(integrations)* Add support for rapid7 (#7899)
+- *(orchestrator)* Sample active concurrency per environment (#7895)
+- *(types)* Add an event catalogue and agent skill for the taxonomy (#7768)
+- *(integrations)* Add support for tenable (#7900)
+- *(integrations)* Add support for chameleoni (#7906)
+- *(integrations)* Add preview subdomain for ironclad (#7915)
+
+### Changed
+
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/e1005c8a13199105f43fd32337360a3fc46c28da by Victor Lang'at
+
+## [v0.71.13] - 2026-10-14
+
+### Added
+
+- *(analytics)* Preserve first visit source through signup (#7872)
+- Add FunctionTags (#7878)
+- Add support for tags to deployment endpoint (#7880)
+- Add tags to createFunction (#7888)
+- *(server)* Block spend alerts at or below the plan's monthly floor (#7890)
+- *(cli)* Warn when a sync or action declares a checkpoint schema but never uses it (#7639)
+
+### Changed
+
+- Drop the MCP tool name collision note (NAN-7428) (#7904)
+
+### Fixed
+
+- *(agent-playground)* Fix the playground chat getting stuck after Stop (#7787)
+- *(webapp)* Stop noise in the dashboard's Sentry project (#7887)
+
 ## Managed 1.6.26 (0.71.12)
 
 ## Managed Nango 1.6.26 (application 0.71.12)
