@@ -1,5 +1,98 @@
 # Managed image releases
 
+## Managed 1.6.28 (0.71.13)
+
+## Managed Nango 1.6.28 (application 0.71.13)
+
+- **Released:** 2026-10-23
+- **Docker image:** `nangohq/nango:managed-1.6.28-0.71.13-5f6fa37a610b7ba88102f56b3b3a0ed277de299a`
+- **Pin CLI to:** `0.71.13`
+- **Compare:** https://github.com/NangoHQ/nango/compare/ad23e4f1f8eeee5509081f1179377e661aa78a10...5f6fa37a610b7ba88102f56b3b3a0ed277de299a
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(webapp)* Merge the Agent and Function Playgrounds into one page (#7897)
+- *(server)* Handle OpenAI outages and spent credits in the Agent Playground (#7875)
+- *(webapp)* Keep failed and stopped replies in the Agent Playground chat (#7901)
+- *(webapp)* Keep the Agent Playground chat until 24 hours without a message (#7916)
+- *(server)* Gate deprecated v1 passthrough and connections search param behind feature flags (#7881)
+- *(hosted-telemetry)* Add the Postgres schema for hosted telemetry (#7911)
+- *(analytics)* Track Agent Playground adoption (#7918)
+- *(agent)* List pinned deployed actions with their input schema (NAN-7663) (#7934)
+- *(server)* Gate Connection MCP behind an account feature flag (#7873)
+- *(analytics)* Track the main actions in each dashboard area (#7932)
+- *(integrations)* Add support for attentive api key (#7923)
+- *(integrations)* Add support for vwo (#7924)
+- *(integrations)* Add support for fiix (#7891)
+- GET /integrations/:key/tools/:name (#7903)
+- GET integrations/:id/tools/:name to fallback to action (#7931)
+- *(integrations)* Add support for Firecrawl (#7737)
+- *(integrations)* Migrate hubspot token and revocation endpoints (#7925)
+- *(cli)* Add createTool (NAN-7597) (#7914)
+- Add GET /integrations/:id/tools endpoint (#7942)
+- *(server)* Link to the Integrations tab when an Agent Playground app isn't set up (#7941)
+- *(integrations)* Add support for litmos (#7922)
+- Allow scopes when creating env API keys (#7948)
+- Allow updating env API keys (#7952)
+- Add POST /connections/:id/tools/:name/calls and node function (#7962)
+- *(hosted-telemetry)* Create the schema on installations that enable it (#7926)
+- *(hosted-telemetry)* Record metrics through OpenTelemetry into Postgres (#7927)
+- *(webapp)* Turn off session recordings for BAA accounts (#7970)
+- *(webapp)* Unmask text in PostHog session recordings (#7959)
+- *(webapp)* Report dashboard crashes and error pages to Sentry (#7973)
+- *(server)* Link Agent Playground events to session replays (#7971)
+- *(analytics)* Carry permitted ad context on account signup (#7981)
+- *(webapp)* Move the Function Playground into function and integration pages (#7961)
+- *(cli)* Add dryrun support for createFunction/createTool (#7972)
+- *(integrations)* Add support for pocket (#7987)
+- *(integrations)* Add support for haus (#8005)
+- *(integrations)* Add support for navan (#8006)
+- *(integrations)* Add support for buildkite (#8015)
+- *(integrations)* Add support for bluebeam (#8010)
+
+### Changed
+
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/5f3a8f2e936a2564852494de879884b8a15aa50b by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/e565103aadcd6a6e6158ed3a3a7827bf9b513e2e by Victor Lang'at
+- Remove deprecated connection endpoint (#7722)
+- Document the OAuth state cookie enforcement flag for self-hosting (#7928)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/9f836014ab8bd0043dfa5200ad15d298c7149dc6 by arctic-char
+- Changelog entries for mid-October (#7935)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/40b2e8c6531c4f034da02cc2fb24905b9c751f7d by Victor Lang'at
+- *(lint)* Rewrite void returns so both lint rules pass (#7920)
+- *(migrations)* Share the schema migration runner and daily partition daemon (#7912)
+- Tighten Nango-managed OAuth apps wording in auth guide (#7969)
+- Changelog entries for the Agent Playground and scoped API keys (#7976)
+- Clarify third-party MCP servers in the agent sessions changelog entry (#7977)
+- Updated security policy (#7990)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/12e121fa6d028e47396e22cc670ff7effa5949b1 by arctic-char
+- *(api)* Remove get/list tools endpoint (#8007)
+- Document the Agent Playground for self-hosted Nango (#8004)
+- Link self-managed Agent Playground setup from changelog (#8014)
+
+### Fixed
+
+- *(server)* Null unsafe check in oauth refresh eats error (#7930)
+- *(server)* Allow empty credentials when creating integration (#7852)
+- *(server)* Invalid config values silently fail connect (#7858)
+- *(webapp)* Polish the Agent Playground copy and UX (#7929)
+- *(server)* Fix the Agent Playground pre-made prompts that fail in prod (#7940)
+- *(webapp)* Fix the dark-mode OpenAI logo and Connect UI backdrop (#7937)
+- Set DD_VERSION to commit hash (#7960)
+- *(hosted-telemetry)* Random producer id, 90-day retention floor (#7989)
+- *(cli)* Allow node:-prefixed url and crypto imports in dryrun (#7991)
+- *(feature-flags)* Default deprecation flags to true (#7957)
+- *(slack)* Fix user token proxy header example (#8009)
+- *(server)* Show the Agent Playground as unavailable when the model key is missing (#7996)
+- Vulns (#8012)
+- Bump Node to 22.23.4 (#8011)
+
 ## Managed 1.6.27 (0.71.13)
 
 ## Managed Nango 1.6.27 (application 0.71.13)
