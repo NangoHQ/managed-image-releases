@@ -1,5 +1,52 @@
 # Managed image releases
 
+## Managed 1.6.29 (0.71.13)
+
+## Managed Nango 1.6.29 (application 0.71.13)
+
+- **Released:** 2026-10-27
+- **Docker image:** `nangohq/nango:managed-1.6.29-0.71.13-87d9af184ea2bfa855bc2f956fc90fa236ce8731`
+- **Pin CLI to:** `0.71.13`
+- **Compare:** https://github.com/NangoHQ/nango/compare/5f6fa37a610b7ba88102f56b3b3a0ed277de299a...87d9af184ea2bfa855bc2f956fc90fa236ce8731
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(webapp)* Rename Nango developer apps to Nango managed OAuth apps (#7995)
+- *(integrations)* Add support for circleback (#7986)
+- Adding datadog service catalog (#8023)
+- *(webapp)* Implement new account onboarding choice screen (#8021)
+- *(webapp)* Animate the Playground hero illustration (#7974)
+- *(providers)* Add publora (#7087)
+- List functions to return function tools (#8024)
+- *(server)* Block disposable email domains during account registration (#8038)
+- *(agent)* Reconnect a session's connection through nango_create_connection (NAN-7502) (#7944)
+- *(integrations)* Add support for oracle-aconex (#8030)
+- *(integrations)* Add support for aha (#8031)
+- *(integrations)* Add support for freshservice-oauth (#8037)
+
+### Changed
+
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/4fdc27a203f56bd8b4f0b79d6e87b010944b31cf by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/a62b7f44f5c843d21146e099576c8246bf7f59ab by Victor Lang'at
+- Stop package-lock.json churn on fresh installs (#8003)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/14ee8f30e859051e0e1f66c2c9391e47ee1bf365 by Fran Ortiz
+- *(connect)* Issue reconnect sessions through createConnectSession (NAN-7684) (#7946)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/abea811f1884e7b050e6f70aaeb354209605f592 by Victor Lang'at
+- Document reconnecting connections from agent sessions (NAN-7832) (#8043)
+
+### Fixed
+
+- *(ci)* Fix the slow CLI verify job in the merge queue (#8036)
+- *(webapp)* Allow switching env from the getting started page (#8035)
+- *(webapp)* Fix the Getting Started redirect loop (#8033)
+- *(server)* Gracefully terminate syncs that made some progress (#8025)
+
 ## Managed 1.6.28 (0.71.13)
 
 ## Managed Nango 1.6.28 (application 0.71.13)
