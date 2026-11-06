@@ -1,5 +1,148 @@
 # Managed image releases
 
+## Managed 1.7.0 (0.72.1)
+
+## Managed Nango 1.7.0 (application 0.72.1)
+
+- **Released:** 2026-11-06
+- **Docker image:** `nangohq/nango:managed-1.7.0-0.72.1-fa1d3d0d6ba6243d363edeb481f8f007e7e4872c`
+- **Pin CLI to:** `0.72.1`
+- **Compare:** https://github.com/NangoHQ/nango/compare/87d9af184ea2bfa855bc2f956fc90fa236ce8731...fa1d3d0d6ba6243d363edeb481f8f007e7e4872c
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(license)* License schema, signed envelope and verification (#8108)
+- Add single function deployment (#8158)
+- *(server)* License check at boot behind NANGO_LICENSE_CHECK (#8110)
+
+### Changed
+
+- *(cli)* Combine deployments of legacy and functions (#8130)
+
+### Fixed
+
+- Azure identity upgrade (#8170)
+
+## [v0.72.1] - 2026-11-04
+
+### Added
+
+- *(webhooks)* Add support for command-alkon webhooks (#8142)
+- *(integrations)* Add support for sendcloud (#7777)
+- Add NANGO_MANAGED credentials and deprecate /integrations/quickstart (#8073)
+- *(deploy)* Add the self-hosting service to the deploy workflow (#8066)
+- *(managed-release)* Build the managed image with the license public key (#8099)
+
+### Changed
+
+- Document --target and server-backed catalog pulls (#8148)
+- Remove integration-templates source code links (#8129)
+
+### Fixed
+
+- *(hosted-telemetry)* Fix flaky double-export test (#8135)
+
+## [v0.72.0] - 2026-11-03
+
+### Added
+
+- *(hosted-telemetry)* On by default outside cloud (#8079)
+- *(server)* Allow setting webhook signing key on env creation (#8087)
+- *(authz)* Rename actions:execute scope to tools:call (NAN-7879) (#8084)
+- *(integrations)* Add support for crustdata (#8094)
+- *(authz)* Migrate stored actions:execute scopes to tools:call (NAN-7882) (#8093)
+- *(dasbhoard)* Add tools support to functions list and details (#8076)
+- *(agent)* Run tools from agent sessions (#8065)
+- *(integrations)* Add support for envoice (#8052)
+- *(integrations)* Add support for Formstack Documents (#7884)
+- *(integrations)* Add support for athenahealth-jwks (#8106)
+- *(internal-auth)* Task capability claims (#7978)
+- *(integrations)* Add support for hydradb (#7968)
+- *(sdk)* Expose metadata and checkpoint in createTool (#8131)
+- Add Close, Google Tasks, Smartsheet, Twitch and Webex Nango managed OAuth apps (#8117)
+- *(sdk)* Add `nango.Error()` to function sdk (#8134)
+- *(self-hosting)* Add the package and the cloud database for installations (#8062)
+- *(sdk)* Structured required scopes for createTool (#8139)
+- *(self-hosting)* Add the service with its probe and the cloud migrations at boot (#8064)
+- *(integrations)* Add support for paximal-mcp (#8137)
+- *(integrations)* Add support for exotel (#8138)
+- *(server)* Add endpoints to fetch catalog function code (#8044)
+- *(cli)* Pull catalog functions from the Nango API instead of GitHub (#8045)
+
+### Changed
+
+- October 2026 changelog roundup (#8101)
+- Refine Nango-managed OAuth apps section in the auth guide (#8105)
+- Changelog entries for Nango-managed OAuth apps and pre-built tools (#8115)
+- *(spec)* Align integration and provider schemas with the API (#8116)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/71eb20d512b797f238f17b16a79d4b1b6dc90ea0 by Agustin Ayerza
+- Update the October roundup to 52 new APIs (#8133)
+
+### Fixed
+
+- *(providers)* Fix symplr CTM to use a selectable hostname (#8102)
+- *(providers)* Fix haus api base url (#8111)
+- Include the Elastic-2.0 license in the frontend and node packages (#8107)
+- *(proxy)* Prevent fallback host takeover and add proxy tracking logs (#7847)
+- *(jobs,lambda)* Default schema fields that zod 4.4 made required (#8078)
+- *(integrations)* Fix zoho refresh canadian connections against `accounts.zohocloud.ca` (#8109)
+- Vulns (#8128)
+- Dd-trace upgrade (#8136)
+
+## [v0.71.14] - 2026-10-29
+
+### Added
+
+- *(integrations)* Add support for loyaltylion (#8039)
+- *(integrations)* Add support for attentive mcp (#8041)
+- *(integrations)* Add support for arcsite (#8042)
+- *(webapp)* Add search by record ID to the Records tab (#8034)
+- *(integrations)* Improve grain api key to use newer version (#8053)
+- *(analytics)* Track onboarding, integration setup and deploy events (#8016)
+- *(orch)* Concurrency hosted telemetry for BYOC/self-hosted (#8013)
+- *(service)* Support initial webhook settings during environment creation (#7998)
+- *(api)* Support webhook configuration during environment creation (#7999)
+- *(integrations)* Add support for extensiv (#8051)
+- *(api)* Expose environment configuration through GET (#8027)
+- *(integrations)* Add support for cch-axcess (#8060)
+- *(integrations)* Add support for buildkite-token-exchange (#8067)
+- Tools support in playground (#8049)
+- *(mcp)* Tools_call (#7979)
+- *(providers)* Add the UK data centre to Zoho's domain extensions (#8056)
+- *(integrations)* Add support for command-alkon (#8080)
+- *(integrations)* Add support for modjo-v2 (#8071)
+- *(integrations)* Add support for metaview-mcp (#8072)
+- *(integrations)* Add support for zscaler (#8090)
+- Add sync functions to quickstart next steps (#8089)
+
+### Changed
+
+- Catalog install instructions for self-hosted customers (#8026)
+- Webhook configuration on environment creation (#8001)
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/4a327634f804719d0dee1d4b44e7977edba04261 by Victor Lang'at
+- Rewrite quickstart around agent sessions (#8075)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/9afa0aabb8fe907a3c45e1dd559960dea870c35c by Victor Lang'at
+- Update integrations overview to 10,000+ pre-built tools (#8086)
+- Changelog entries for environment configuration API and smaller improvements (#8088)
+- Clarify that Nango-managed OAuth apps can be used in production (#8091)
+
+### Fixed
+
+- *(audit)* Fix audit ClickHouse tests failing on expired TTL (#8054)
+- Npm audit fix (#8050)
+- Pin every zod install to 4.6.7 (#8048)
+- Patch undici, body-parser, and multer advisories (#8057)
+- *(agent)* Fix the generic error when an agent hits the connection cap (#8032)
+- *(runner)* Remove required config for env var (#8070)
+- *(server)* Accept `/action/trigger` requests without input (#8074)
+- *(providers)* Correct Atlassian typo in subdomain description (#8083)
+
 ## Managed 1.6.29 (0.71.13)
 
 ## Managed Nango 1.6.29 (application 0.71.13)
