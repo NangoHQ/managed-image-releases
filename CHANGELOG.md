@@ -1,5 +1,119 @@
 # Managed image releases
 
+## Managed 1.7.1 (0.72.4)
+
+## Managed Nango 1.7.1 (application 0.72.4)
+
+- **Released:** 2026-11-10
+- **Docker image:** `nangohq/nango:managed-1.7.1-0.72.4-35990393222b9d0108f0f799f7bdf07aff4dec95`
+- **Pin CLI to:** `0.72.4`
+- **Compare:** https://github.com/NangoHQ/nango/compare/fa1d3d0d6ba6243d363edeb481f8f007e7e4872c...35990393222b9d0108f0f799f7bdf07aff4dec95
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(webapp)* Rename actions to tools (#8157)
+- *(docs)* Action -> tools (#8100)
+- *(providers)* Allow skipping token revocation on connection deletion for linear (#8222)
+- *(pre-approved)* Expose and update enabled in the internal api (#8213)
+- *(integrations)* Add support for new providers (#8225)
+- *(webapp)* Restyle sidebar to navigation v2 (#8186)
+- *(providers)* Add function counts to provider list (#8198)
+- *(webapp)* Keep integrations search in the url (#8199)
+- *(webapp)* Add catalog page (#8201)
+- Support standalone native function/tool deletion (#8226)
+- *(webapp)* Use breadcrumbs as page titles in the app shell (#8216)
+- *(webapp)* Default the webapp theme to the OS preference (#8233)
+- *(mfa)* Gate 2FA setup to Cloud and enterprise self-hosted (NAN-8096) (#8211)
+- *(integrations)* Add support for new providers (#8230)
+- *(agent)* Record result size and latency on tool call events (NAN-8054) (#8191)
+- *(server)* Allow passing GitHub app config overrides on connection (#8215)
+
+### Changed
+
+- Changelog entries for November 9 (#8227)
+- *(webapp)* Split function panel into reusable pieces (#8200)
+- Pull request template update (#8223)
+
+### Fixed
+
+- Function with http subscriptions are not tools (#8221)
+- *(server)* Return 400 for paths that cannot be percent-decoded (#8220)
+
+## [v0.72.4] - 2026-11-09
+
+### Added
+
+- *(integrations)* Add support for new providers (#8210)
+- *(integrations)* Add support for new providers (#8212)
+- Remote deploy/dryrun to support tools (#8208)
+
+## [v0.72.3] - 2026-11-06
+
+### Added
+
+- *(oauth2)* Add token_request_auth_method none for public clients (#8156)
+- *(webapp)* Load catalog function code from the Nango API instead of GitHub (#8046)
+- *(cli)* Remove nango clone (#8059)
+- *(db)* Add account_getting_started table (#8144)
+- *(server)* Track agent getting started progress per account (#8145)
+- *(webapp)* Agent-first getting started page (#8146)
+- *(integrations)* Add support for new providers (#8095)
+- *(webapp)* Move function drawer actions out of the three-dot menu (#8190)
+- Add public environment updates (#8150)
+- Audit public environment updates (#8151)
+- Allow importing webhook signing keys during rotation (#8164)
+- *(integrations)* Add support for new providers (#8162)
+- *(integrations)* Add support for sharefile (#8127)
+- *(database)* Add enabled flag to providers_shared_credentials (#8183)
+- *(shared-credentials)* Allow disabling Nango-managed apps (#8184)
+- *(integrations)* Add support for new providers (#8178)
+- *(design-system)* Refresh Button to the Dharma spec (#8172)
+- Prepare CLI/server to tools support in sandbox deploy/dryrun  (#8206)
+- *(design-system)* Add button CTA variant to Alert (#8203)
+- *(design-system)* Align IconButton with the Dharma spec (#8174)
+- *(self-hosting)* Registry services and the license CLI (#8185)
+- *(integrations)* Add support for Anymail Finder (#7764)
+
+### Changed
+
+- *(self-hosting)* Explain how to create the first administrator (#8182)
+- Suggest GitHub in quickstart and push agents to install the Management MCP (#8188)
+- Update README introduction for AI agents (#8189)
+- Fold webhook settings audit events under environment.updated (#8166)
+- Update rotate-webhook-signing-key docs (#8195)
+- Drop the retired MFA flag from self-managed docs (NAN-8077) (#8194)
+- Update version in manifest
+- Remove old 0.0.1 package versions from the GitHub registry (#8040)
+
+### Fixed
+
+- Support deleting the last legacy scripts (#8154)
+- *(docs)* Rotate-webhook-signing-key response (#8196)
+- *(dev)* Fix orphaned local dev processes after nodemon restarts (#7994)
+- *(persist)* Deleting a missing checkpoint is a no-op (#8169)
+
+## [v0.72.2] - 2026-11-05
+
+### Added
+
+- *(agent)* Discover MCP tools for connections added mid-session (NAN-7841) (#8068)
+- *(agent)* Ask agents for their goal and intent on tool calls (NAN-7828) (#8143)
+- *(cli)* Add single function deploy via path (#8160)
+
+### Changed
+
+- Allow growth plans to temporarily have the add-on flag (#8171)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/bbea1a1231d92b7dcb7223a2ce17dddcf1980b13 by Victor Lang'at
+
+### Fixed
+
+- More vuln fixes (#8173)
+
 ## Managed 1.7.0 (0.72.1)
 
 ## Managed Nango 1.7.0 (application 0.72.1)
