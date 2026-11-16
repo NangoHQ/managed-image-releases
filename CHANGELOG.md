@@ -1,5 +1,72 @@
 # Managed image releases
 
+## Managed 1.7.2 (0.72.4)
+
+## Managed Nango 1.7.2 (application 0.72.4)
+
+- **Released:** 2026-11-16
+- **Docker image:** `nangohq/nango:managed-1.7.2-0.72.4-b6a9ee10e6aaa81f42506436f9d2287ead8f7561`
+- **Pin CLI to:** `0.72.4`
+- **Compare:** https://github.com/NangoHQ/nango/compare/35990393222b9d0108f0f799f7bdf07aff4dec95...b6a9ee10e6aaa81f42506436f9d2287ead8f7561
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(integrations)* Add DocuSign Connect webhook routing (#8241)
+- *(audit)* Record control-plane credential reads (#8228)
+- *(agent-sessions)* Track session configuration on session start (NAN-7475) (#8240)
+- *(plans)* Add audit_trail_data_plane_scopes to plans (#8237)
+- *(plans)* Backfill audit_trail_data_plane_scopes for paying plans (#8238)
+- *(persist)* Accept task capability tokens (#7980)
+- *(integrations)* Add support for new providers (#8253)
+- *(design-system)* Segmented Control + theme switcher (#8247)
+- *(design-system)* Sync design tokens with Figma (#8251)
+- *(agent)* Make goal and intent clearer to agents on tool calls (NAN-8183) (#8257)
+- *(agent-sessions)* Name the connected account in session instructions (NAN-8055) (#8232)
+- *(agent)* Ask for goal and intent on direct tool calls and nango_proxy (NAN-8005) (#8255)
+- *(agent-sessions)* Record the function source on tool calls (NAN-8186) (#8254)
+- *(button)* Add danger-ghost variant (#8262)
+- *(self-hosting)* Installation tokens, minted on the installation and verified against the registry (#8224)
+- *(self-hosting)* ClickHouse installations.metrics table and the batch insert (#8239)
+- *(ds)* InlineCode + rebuilt Alert (#8266)
+- *(webhooks)* Add support for woocommerce webhooks (#8273)
+- *(agent)* Accept several queries in one nango_tool_search call (NAN-8053) (#8192)
+- *(webhooks)* Add support for laylo webhooks (#8287)
+- *(integrations)* Add support for new providers (#8279)
+- *(integrations)* Add support for new providers (#8290)
+- *(integrations)* Add support for new providers (#8298)
+- *(integrations)* Add support for new providers (#8286)
+- *(webapp)* Replace the catalog's Show more button with infinite scroll (#8275)
+- *(webapp)* Finish the app shell: secondary nav column and page spacing (#8269)
+
+### Changed
+
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/8ac1f1f4420406fd2d00ac2f47a8da16a1ff9ba4 by Victor Lang'at
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/756773c85fc09566c7e91554e25469fa1f233b8e by Victor Lang'at
+- Update Nango-managed OAuth apps list (#8267)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/2b30b08c8711e68900023e3088ae2d40166229be by Victor Lang'at
+- *(agents)* Move design-system agent conventions into the repo (#8261)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/d52846afe0814ecbbbcde6ba47da2d17ca62f63d by Victor Lang'at
+
+### Fixed
+
+- *(webapp)* Apply catalog feedback from launch review (#8235)
+- *(webapp)* Fix keyboard access to integration function details (#8250)
+- *(webapp)* 12px spacing above sidebar user row (#8242)
+- *(webapp)* Stop theme switcher tooltip flicker on hover (#8264)
+- *(agent-sessions)* Raise tool name part limit to 64 (NAN-8152) (#8231)
+- *(webapp)* Show the dashboard at desktop width on phones (#8268)
+- *(server)* Fix missing replay session on Google signup events (#8022)
+- *(webapp)* Fix dashboard error pages reporting no details to Sentry (#8002)
+- *(server)* Fix missing Orb link for teams of removed users (#8234)
+- *(agent)* Promote the leading tool search result (NAN-8248) (#8297)
+- *(providers)* Drop pkce for teamviewer (#8302)
+
 ## Managed 1.7.1 (0.72.4)
 
 ## Managed Nango 1.7.1 (application 0.72.4)
