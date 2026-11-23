@@ -1,5 +1,135 @@
 # Managed image releases
 
+## Managed 1.7.3 (0.72.6)
+
+## Managed Nango 1.7.3 (application 0.72.6)
+
+- **Released:** 2026-11-23
+- **Docker image:** `nangohq/nango:managed-1.7.3-0.72.6-b16be9c0aa0fe1040bf1e21b5310b8e54c6ca79f`
+- **Image digest:** `sha256:69896cbdc3878d57d490bc066d00d079caa5f674c28f0cf01402e84b3cbae18c`
+- **Pin CLI to:** `0.72.6`
+- **Compare:** https://github.com/NangoHQ/nango/compare/b6a9ee10e6aaa81f42506436f9d2287ead8f7561...b16be9c0aa0fe1040bf1e21b5310b8e54c6ca79f
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Verify the image
+
+The image is signed with [cosign](https://docs.sigstore.dev/cosign/) by Nango's release workflow. To check the signature of this release's exact image:
+
+```bash
+cosign verify nangohq/nango@sha256:69896cbdc3878d57d490bc066d00d079caa5f674c28f0cf01402e84b3cbae18c \
+  --certificate-identity https://github.com/NangoHQ/nango/.github/workflows/managed-release.yaml@refs/heads/master \
+  --certificate-oidc-issuer https://token.actions.githubusercontent.com
+```
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(agent-sessions)* Add endpoint and invalid arguments to proxy request events (NAN-8247) (#8301)
+- *(design-system)* Add CopyButton (#8175)
+- *(playground)* Record what typed Agent Playground first messages ask for (#8293)
+- *(design-system)* Add SplitButton (#8176)
+- *(server)* Accept task capability tokens on script routes (#7983)
+- *(webapp)* Rename team and profile settings URLs (#8307)
+- *(webapp)* Add an explore-first onboarding flow (#8315)
+- *(integrations)* Add support for new providers (#8324)
+- *(integrations)* Add support for microsoft admin with certificate credentials (#8328)
+- *(design-system)* Restyle Input Group, Input and Field to Dharma (#8246)
+- *(design-system)* Checkbox + Switch refresh (#8248)
+- *(self-hosting)* Upload the telemetry of past days from the installation (#8244)
+- *(self-hosting)* Export endpoint on the installation for the manual path (#8308)
+- *(metering)* Batch audit events across SQS receives before writing to ClickHouse (#8319)
+- *(agent-sessions)* Serve the 2026-07-28 MCP revision (NAN-8304) (#8316)
+- *(integrations)* Add support for epicor prophet 21 (#8359)
+- *(design-system)* Lift SecretInput into the design system (#8325)
+- *(design-system)* Remove the 2xs icon button size (#8348)
+- *(shared)* Read integration templates from a separate bucket when configured (#8347)
+- *(integrations)* Add support for new providers (#8369)
+- *(integrations)* Add support for new providers (#8387)
+- *(integrations)* Add support for new providers (#8376)
+- *(audit)* Record data-plane credential reads on self-hosted deployments (#8372)
+- *(integrations)* Add support for new providers (#8390)
+- Add OpenCode and Antigravity MCP setup (#8391)
+- Support createTool in catalog  definitions (#8354)
+- *(webhooks)* Route Gmail Pub/Sub pushes on the google integration (#8352)
+- *(integrations)* Allow presetting scopes on the integration for google service account (#8294)
+- *(integrations)* Add support for new providers (#8407)
+- *(integrations)* Add support for deputy (#8310)
+- *(integrations)* Add support for new providers (#8421)
+- *(integrations)* Add support for fuentio mcp (#8411)
+- *(webhooks)* Add support for bamboohr webhooks (#8345)
+
+### Changed
+
+- Remove agent sessions experimental note from API key scopes (#8318)
+- Auto-approve PRs that only add new providers (#8291)
+- Hold provider auto-approval until Cubic has reviewed (#8321)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/5ca5bcf3ef4c6d8e64e1de1bbf2be46fbcf93083 by Victor Lang'at
+- Changelog entries for November 17 (#8337)
+- Reposition intro page around agent tool calling (#8342)
+- *(managed-release)* Publish the managed image for arm64 (#8296)
+- *(docker-compose)* Run nango-server on the host's platform (#8355)
+- *(design-system)* Make the repo the only source of design tokens (#8256)
+- Restructure guides around use cases (pass 1: moves & redirects) (#8351)
+- *(audit)* Document connection credential reads through the API (#8368)
+- *(managed-release)* Sign the managed image with cosign (#8371)
+- Revamp part two (#8370)
+- Revamp Auth and Tools guides (#8415)
+- Show tool annotation hints (#8418)
+- Validate json input on MCP interfaces (NAN-8405) (#8423)
+
+### Fixed
+
+- *(webapp)* Polish the agent-first Getting started page (#8278)
+- *(analytics)* Rename the dashboard analytics surface to `app` (#8214)
+- *(providers)* Update 1password-user token url (#8322)
+- *(agent)* Tell the agent a new session is needed when its connection was deleted (NAN-7503) (#8333)
+- *(pubsub)* Raise the SNS publish retry count (#8350)
+- *(connect)* Keep connection metadata on reconnect (NAN-7686) (#8332)
+- *(agent)* Slim tool search responses (NAN-8308, NAN-7652) (#8317)
+- *(webapp)* Align Select and Combobox focus with inputs (#8340)
+- *(integration-tests)* Use pg.getHost to reach pg test containers (#8363)
+- *(records)* Drive the delete size lookup from the batch subquery (#8349)
+- *(providers)* Fix redo api key regex pattern (#8366)
+- Collapse self managed impact section in PR template (#8364)
+- *(integrations)* Update conta azul oauth hosts (#8356)
+- *(agent)* Stop promoting tied tool search results (NAN-8307) (#8327)
+- Accont for native tools in dashboard /catalog page (#8400)
+- *(actions)* Validate json input on MCP interfaces (NAN-8405) (#8380)
+- *(mcp)* Return provider failure details (NAN-8406) (#8379)
+
+## [v0.72.6] - 2026-11-16
+
+### Added
+
+- *(self-hosting)* Telemetry upload endpoint for installations (#8243)
+- *(audit)* Record data-plane connection credential reads behind a rollout flag (#8272)
+- *(CLI)* Compilation to output functions version hash (#8314)
+
+### Changed
+
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/60e41920a22b33d8272a4813b91dc456d50d4fe3 by Victor Lang'at
+- *(agent-sessions)* Note that tools may change at any time (#8309)
+- Update version in manifest
+
+## [v0.72.5] - 2026-11-16
+
+### Added
+
+- *(design-system)* Add LinkButton and migrate link buttons to it (#8177)
+
+### Changed
+
+- Reject action deployments for account without any actions (#8236)
+- *(docker)* Build nangohq/nango and nango-server:hosted for arm64 (#8289)
+
+### Fixed
+
+- `nango pull` support for native tools (#8252)
+- *(self-hosting)* Keep idle connections open longer than the load balancer (#8270)
+
 ## Managed 1.7.2 (0.72.4)
 
 ## Managed Nango 1.7.2 (application 0.72.4)
