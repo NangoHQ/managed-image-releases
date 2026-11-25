@@ -1,5 +1,61 @@
 # Managed image releases
 
+## Managed 1.7.4 (0.72.6)
+
+## Managed Nango 1.7.4 (application 0.72.6)
+
+- **Released:** 2026-11-25
+- **Docker image:** `nangohq/nango:managed-1.7.4-0.72.6-760ad16855ca84e3abf92a75ee77ed2f5aa27ba3`
+- **Image digest:** `sha256:895bd167244485681ee91b194513d0d108ad1047599fe983a6502a176180483e`
+- **Pin CLI to:** `0.72.6`
+- **Compare:** https://github.com/NangoHQ/nango/compare/b16be9c0aa0fe1040bf1e21b5310b8e54c6ca79f...760ad16855ca84e3abf92a75ee77ed2f5aa27ba3
+- **Public changelog:** https://nango.dev/docs/updates/changelog
+
+### Verify the image
+
+The image is signed with [cosign](https://docs.sigstore.dev/cosign/) by Nango's release workflow. To check the signature of this release's exact image:
+
+```bash
+cosign verify nangohq/nango@sha256:895bd167244485681ee91b194513d0d108ad1047599fe983a6502a176180483e \
+  --certificate-identity https://github.com/NangoHQ/nango/.github/workflows/managed-release.yaml@refs/heads/master \
+  --certificate-oidc-issuer https://token.actions.githubusercontent.com
+```
+
+### Changes
+
+## [Unreleased]
+
+### Added
+
+- *(self-hosting)* Report license expiry and last seen per installation (#8392)
+- *(oauth)* Support public OAuth clients and bracketed scopes (#8313)
+- *(integrations)* Add support for new providers (#8312)
+- *(providers)* Add doc_section to Fathom apiKey field (#8429)
+- *(integrations)* Add support for new providers (#8434)
+- *(webapp)* Point Getting Started to the catalog (#8428)
+- *(design-system)* Sync design tokens to Figma with an agent (#8276)
+- *(design-system)* Settle token differences with Figma (#8441)
+- *(agent)* Set up playground integrations from typed prompts (#8339)
+- *(server)* Check the license at boot by default on managed images (#8444)
+- *(integrations)* Add support for LINE Yahoo Ads (#8122)
+- *(integrations)* Add Facebook and Instagram Login for Business (#8303)
+- *(integrations)* Add support for new providers (#8447)
+
+### Changed
+
+- Update version in manifest
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/1e281e917aac9a7b98349405f92fbb981135cb8a by Marcin Dobrowolski
+- *(managed-release)* Stamp the managed version into the released image (#8373)
+- *(integration-templates)* Automatic update from https://github.com/NangoHQ/integration-templates/commit/4e531b18313351b2f3c12ca00a6e83bc6c224c81 by Marcin Dobrowolski
+- *(audit)* Remove the data-plane credential reads rollout flag (#8433)
+
+### Fixed
+
+- *(webapp)* Lighten code block backgrounds across the webapp (#8362)
+- Version bumps for vuln fixes (#8414)
+- *(providers)* Stop sending sunset google ads developer token (#8329)
+- *(webapp)* Fix scrolling in the Test run function picker (#8432)
+
 ## Managed 1.7.3 (0.72.6)
 
 ## Managed Nango 1.7.3 (application 0.72.6)
